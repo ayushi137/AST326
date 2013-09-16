@@ -5,10 +5,15 @@ import matplotlib.pyplot as plt
 nsamp = 0.1
 tsamp = 10
 
-x = np.loadtxt("data1.txt")
-count = 0
+x = np.loadtxt("data3.txt")
 
-for i in x:
-    count = count + i/tsamp
+#count = 0
+
+#for i in x:
+#    count = count + i/tsamp
     
-print count/nsamp
+#print count/nsamp
+
+plt.figure()
+plt.plot (x)
+plt.show()
