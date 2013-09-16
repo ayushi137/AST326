@@ -14,6 +14,9 @@ x = np.loadtxt("data3.txt")
     
 #print count/nsamp
 
+# to plot the graph
 plt.figure()
 plt.plot (x)
 plt.show()
+
+
