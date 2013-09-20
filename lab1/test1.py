@@ -2,8 +2,8 @@ import numpy as np
 import PMT as pmt
 
 nsamp = 100
-tsamp = 0.01
-nrep = 4
+tsamp = 0.001
+nrep = 6
 
 k = np.arange (nrep) +1
 
