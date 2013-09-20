@@ -45,12 +45,14 @@ for x in range(count_rate.shape[0]):
     
 meanSD_rate = mean_SD (m2)
 
-'''
+
+
 # ~~~~~~~~~~~~~~~~~~~to plot the graph
+plt.figure(1,figsize=(9, 6))
 for x in range(len(data)):
 
-    plt.figure(x+1, figsize=(9, 6))
-    plt.plot (data[x], 'm')
+    plt.subplot(3,2,x+1)
+    plt.plot (data[x], 'm', drawstyle = 'steps-mid')
     plt.xlabel('Count')
     plt.ylabel('Time (ms)')
 
@@ -59,21 +61,19 @@ for x in range(len(data)):
 hmin = 0
 hmax = 5
 
+plt.figure(2)
 hr = np.arange(hmin, hmax+1)
-hist1 = np.array([np.where(data1 ==i)[0].size for i in hr])
-hist2 = np.array([np.where(data2 ==i)[0].size for i in hr])
-hist3 = np.array([np.where(data3 ==i)[0].size for i in hr])
-hist4 = np.array([np.where(data4 ==i)[0].size for i in hr])
-hist5 = np.array([np.where(data5 ==i)[0].size for i in hr])
-hist6 = np.array([np.where(data6 ==i)[0].size for i in hr])
-hist = [hist1,hist2,hist3,hist4,hist5,hist6]
+
+hist_all = []
 
 for x in range(len(data)):
-    plt.figure(7+x)
-    plt.plot(hr,hist[x], drawstyle='steps-mid')
-'''
+    plt.subplot(3,2,x+1)
+    hist = np.array([np.where(data[x] ==i)[0].size for i in hr])
+    hist_all.append(hist)
+    plt.plot(hr,hist, drawstyle='steps-mid')
+
 #~~~~~~~~~~~~~~plot mean and standard deviation
-plt.figure(1)
+plt.figure(3)
 xbar = []
 s = []
 for i in range(len(data)):
@@ -89,6 +89,9 @@ y = x
 plt.plot(x, y)
 plt.yscale('log')
 plt.xscale('log')
+
+#~~~~~~~~~~~poission distribution
+
 
 plt.show()
 
