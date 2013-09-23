@@ -3,12 +3,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
-data1 = np.loadtxt("lab1_data1.txt")
-data2 = np.loadtxt("lab1_data2.txt")
-data3 = np.loadtxt("lab1_data3.txt")
-data4 = np.loadtxt("lab1_data4.txt")
-data5 = np.loadtxt("lab1_data5.txt")
-data6 = np.loadtxt("lab1_data6.txt")
+data1 = np.loadtxt("test_1_0.001_100.dat")
+data2 = np.loadtxt("test_1_0.001_100.dat")
+data3 = np.loadtxt("test_1_0.001_100.dat")
+data4 = np.loadtxt("test_1_0.001_100.dat")
+data5 = np.loadtxt("test_1_0.001_100.dat")
+data6 = np.loadtxt("test_1_0.001_100.dat")
 data = [data1,data2,data3,data4,data5,data6]
 
 tsamp = 0.001
