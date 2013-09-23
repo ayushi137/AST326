@@ -13,7 +13,6 @@ while x <= 6:
     data.append(data1)
     x+=1
 '''
-
 '''
 # Question 8
 while x <= 6:
