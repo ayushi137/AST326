@@ -13,13 +13,13 @@ while x <= 6:
     data.append(data1)
     x+=1
 '''
-'''
+
 # Question 8
 while x <= 6:
     data1 = np.loadtxt("SMALLRATEtask8pmtrunno_{0}count0.001.dat".format(x))
     data.append(data1)
     x+=1
-'''
+
 
 tsamp = 0.001
 nsamp = 100
@@ -91,7 +91,7 @@ for x in range(len(data)):
     plt.ylim (0,max(data[x]),2)
     plt.ylabel('Time (ms)')
     plt.tight_layout()
-    #c+=1
+    c+=1
 plt.xlabel('Count')
 
 # ~~~~~~~~~~~~~~~~to plot the histograms
@@ -109,9 +109,11 @@ for x in range(len(data)):
     plt.subplot(3,2,x+1)
     hist = np.array([np.where(data[x] ==i)[0].size for i in hr])
     hist_all.append(hist)
-    plt.plot(hr,hist, drawstyle='steps-mid')
+    plt.plot(hr,hist, drawstyle='steps-mid', lw=1 )
+    plt.ylabel ('Frequency')
     plt.plot(w,poission_the[x])
     plt.plot(w,gaussian_the[x])
+plt.xlabel ('Count')
     #c+=1
 '''
 #~~~~~~~~~~~~~~plot mean and standard deviation
