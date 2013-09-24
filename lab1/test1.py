@@ -12,7 +12,7 @@ for i in k:
     x = pmt.photoncount(tsamp,nsamp)
     print x
     
-    myfilename = 'test_{0}_{1}_{2}.dat'.format(i,tsamp,nsamp)
+    myfilename = 'dark_{0}_{1}_{2}.dat'.format(i,tsamp,nsamp)
     print 'Write data to: ' + myfilename
 
     np.savetxt(myfilename,x,fmt='%i')
