@@ -16,6 +16,7 @@
     
     two graphs: Histogram_with_distribution_0.001_1000.pdf - all combined
     		Histogram_with_distribution_0.001_1000_2.pdf - all seperate
+		Histogram_with_distribution_0.001_1000_3.pdf - with the mean (second data)
 
  ~~~~~~Question 8   -- light count with 400 count and 0.01 time span 1-6
    mean and standard deviation to each graph
@@ -33,6 +34,7 @@
    [ 1664.66666667,    18.09327684] Hz
 
    two graphs: Histogram_with_distribution_0.01_400.pdf - all combined
-    	       Histogram_with_distribution_0.01_400_2.pdf - all seperate (GET THIS ONE )
+    	       Histogram_with_distribution_0.01_400_2.pdf - all seperate 
+	       Histogram_with_distribution_0.01_400_3.pdf - with the mean (second data)
 
-   compare these two and talk about how they are different and similar? Why doesnt the Gaussian works? How do you compare a histogram, which represent the measured counts with a theoretical distribution? Talk about the fact that i had to multiply the probability with the count numbers as in how did i compare measure ( histogram) and theoretical (distribution). I can express my measure as a probability not predict count using probability. 
+   compare these two and talk about how they are different and similar? Why doesnt the Gaussian works? How do you compare a histogram, which represent the measured counts with a theoretical distribution? Talk about the fact that i had to multiply the probability with the count numbers as in how did i compare measure ( histogram) and theoretical (distribution). I can express my measure as a probability not predict my measures using probability because probability is dependent on mean and SD.

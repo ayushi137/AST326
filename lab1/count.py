@@ -15,7 +15,7 @@ while x <= 6:
 '''
 # Question 8A
 while x <= 6:
-    data1 = np.loadtxt("SMALLRATEtask8pmtrunno_{0}count0.001.dat".format(x))
+    data1 = np.loadtxt("LARGESETpmtrunno_{0}.dat".format(x))
     data.append(data1)
     x+=1
 '''
@@ -77,7 +77,7 @@ MOM_SDOM = mean_SD(m3)
 poission_the = []
 gaussian_the = []
 hmin = 0
-hmax = 10
+hmax = 35
 '''
 for v in range(len(data)):
     hmin = min(data[v])
@@ -92,17 +92,11 @@ for v in range(len(data)):
     g = G*len(data[v])
     gaussian_the.append(g)
 '''
-w = np.arange(hmin, hmax+1, 1)
+w = np.arange(hmin, hmax+1, 0.001)
 P2 = ((MOM_SDOM[0])**w)*(np.exp(-(MOM_SDOM[0]))/sc.factorial(w))
 p2 = P2*len(data[0])
 
-a_o = (((w-(MOM_SDOM[0]))/(MOM_SDOM[1]))**2)
-a = np.zeros(11)
-for x in range(11):
-    a[x] = long((math.exp((-1/2)*(a_o[x]))))
-
-b = (MOM_SDOM[1])*(np.sqrt(2*np.pi))
-G2 = (a)/(b)    
+G2 = (np.exp((-1/2)*(((w-(MOM_SDOM[0]))/meanSD[1][1])**2)))/(((meanSD[1][1]))*(np.sqrt(2*np.pi)))
 g2 = G2*len(data[0])
 
 
@@ -126,12 +120,12 @@ c+=1
 '''
 # ~~~~~~~~~~~~~~~~to plot the histograms
 
-plt.figure(c,figsize=(11, 9))
+plt.figure(c,figsize=(13, 9))
 color_index = 0
 
 hist_all = []
 hmin = 0
-hmax = 10
+hmax = 35
 
 for x in range(len(data)):
     #hmin = min(data[x])
@@ -149,13 +143,13 @@ for x in range(len(data)):
     #plt.plot(o,poission_the[x], label = 'Poisson')
     #plt.plot(o,gaussian_the[x], label= 'Gaussian')
 
-o = np.arange(hmin, hmax+1, 1)
+o = np.arange(hmin, hmax+1, 0.001)
 plt.plot(o, p2, lw=2, label = 'Poisson')
 plt.plot(o, g2, lw=2, label = 'Gaussian')
 plt.legend()
 plt.xlabel ('Count')
 
-#plt.savefig('Histogram_with_distribution_0.01_400.pdf')
+#plt.savefig('Histogram_with_distribution_0.01_400_3.pdf')
     #c+=1
 '''
 #~~~~~~~~~~~~~~plot mean and standard deviation
