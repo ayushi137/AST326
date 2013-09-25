@@ -13,7 +13,6 @@ while x <= 6:
     data.append(data1)
     x+=1
 '''
-
 # Question 8A
 while x <= 6:
     data1 = np.loadtxt("SMALLRATEtask8pmtrunno_{0}count0.001.dat".format(x))
@@ -28,7 +27,7 @@ while x <= 6:
 '''
 
 tsamp = 0.001
-nsamp = 100
+nsamp = 400
 
 
 # ~~~~~~~~~~~~~~~~~~~~ mean and standard deviation 
@@ -77,13 +76,14 @@ MOM_SDOM = mean_SD(m3)
 # ~~~~~~~~~~~~~~~~~~ theoretical distribution poission and gaussian
 poission_the = []
 gaussian_the = []
-#hmin = 0
-#hmax = 10
+hmin = 0
+hmax = 10
+'''
 for v in range(len(data)):
-    v = 0
     hmin = min(data[v])
     hmax = max(data[v])
-    w = np.arange(hmin, max(data[v])+1, 0.001)
+    print hmax
+    w = np.arange(hmin, hmax+1, 0.001)
     P = ((meanSD[v][0])**w)*(np.exp(-(meanSD[v][0]))/sc.factorial(w))
     p = P*len(data[v])
     poission_the.append(p)
@@ -93,19 +93,18 @@ for v in range(len(data)):
     gaussian_the.append(g)
 '''
 w = np.arange(hmin, hmax+1, 0.001)
-
 P2 = ((MOM_SDOM[0])**w)*(np.exp(-(MOM_SDOM[0]))/sc.factorial(w))
-p2 = P*len(data[0])
+p2 = P2*len(data[0])
     
 G2 = (np.exp((-1/2)*(((w-(MOM_SDOM[0]))/(MOM_SDOM[1]))**2)))/((MOM_SDOM[1])*(np.sqrt(2*np.pi)))
-g2 = G*len(data[0])
-'''
+g2 = G2*len(data[0])
+
 
 
 ###### gprahs ... the setting changes ad per the data 
 colors = "bgrcmykw"
 c = 1
-
+'''
 # ~~~~~~~~~~~~~~~~~~~to plot the graph
 plt.figure(c,figsize=(13, 8.5))
 for x in range(len(data)):
@@ -118,39 +117,41 @@ for x in range(len(data)):
     c+=1
 plt.xlabel('Count')
 c+=1
-
+'''
 # ~~~~~~~~~~~~~~~~to plot the histograms
 
 plt.figure(c,figsize=(11, 9))
 color_index = 0
 
 hist_all = []
-
+hmin = 0
+hmax = 10
+'''
 for x in range(len(data)):
-    hmin = min(data[x])
-    hmax = max(data[x])
+    #hmin = min(data[x])
+    #hmax = max(data[x])
     print hmax
-    hr = np.arange(hmin,  max(data[v])+1)
-    w = np.arange(hmin, max(data[v])+1, 0.001)
+    hr = np.arange(hmin, hmax+1)
+    o = np.arange(hmin, hmax+1, 0.001)
     #plt.figure(c,figsize=(11, 3))
-    plt.subplot(3,2,x+1)
+    #plt.subplot(3,2,x+1)
     hist = np.array([np.where(data[x] ==i)[0].size for i in hr])
     hist_all.append(hist)
-    plt.plot(hr,hist, drawstyle='steps-mid', lw=1.5 , label = 'Histogram')#c=colors[color_index]  )
-    #color_index += 1
+    plt.plot(hr,hist, drawstyle='steps-mid', lw=1.5 , c=colors[color_index]  )#label = 'Histogram')#
+    color_index += 1
     plt.ylabel ('Frequency')
-    plt.plot(w,poission_the[x], label = 'Poisson')
-    plt.plot(w,gaussian_the[x], label= 'Gaussian')
-    plt.legend()
-    plt.xlabel ('Count')
-#w = np.arange(hmin, hmax+1, 0.001)
-#plt.plot(w, p2, lw=2, label = 'Poisson')
-#plt.plot(w, g2, lw=2, label = 'Gaussian')
+    #plt.plot(o,poission_the[x], label = 'Poisson')
+    #plt.plot(o,gaussian_the[x], label= 'Gaussian')
+'''
+o = np.arange(hmin, hmax+1, 0.001)
+plt.plot(o, p2, lw=2, label = 'Poisson')
+plt.plot(o, G2*100, lw=2, label = 'Gaussian')
+plt.legend()
+plt.xlabel ('Count')
 
-
-plt.savefig('Histogram_with_distribution_0.001_1000_2.pdf')
+#plt.savefig('Histogram_with_distribution_0.01_400.pdf')
     #c+=1
-
+'''
 #~~~~~~~~~~~~~~plot mean and standard deviation
 c+=1
 plt.figure(c,figsize=(9, 6))
@@ -171,7 +172,7 @@ plt.yscale('log')
 plt.xscale('log')
 
 #~~~~~~~~~~~poission distribution
-
+'''
 
 plt.show()
 

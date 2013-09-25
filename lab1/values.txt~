@@ -1,0 +1,17 @@
+1) Question 8   -- light count with 1000 count and 0.001 time span 1-6
+    
+    mean and standard deviation to each graph
+     ([[ 1.712     ,  1.39893281],
+       [ 1.621     ,  1.28802873],
+       [ 1.789     ,  1.39011201],
+       [ 1.712     ,  1.33897306],
+       [ 1.685     ,  1.30287086],
+       [ 1.679     ,  1.36888014]])
+
+    MOM and SDOM
+    [ 1.69966667,  0.05498242]
+    
+    two graphs: Histogram_with_distribution_0.001_1000.pdf - all combined
+    		Histogram_with_distribution_0.001_1000_2.pdf - all seperate
+
+2)
