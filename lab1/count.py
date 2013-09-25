@@ -126,7 +126,7 @@ color_index = 0
 hist_all = []
 hmin = 0
 hmax = 10
-'''
+
 for x in range(len(data)):
     #hmin = min(data[x])
     #hmax = max(data[x])
@@ -142,10 +142,10 @@ for x in range(len(data)):
     plt.ylabel ('Frequency')
     #plt.plot(o,poission_the[x], label = 'Poisson')
     #plt.plot(o,gaussian_the[x], label= 'Gaussian')
-'''
+
 o = np.arange(hmin, hmax+1, 0.001)
 plt.plot(o, p2, lw=2, label = 'Poisson')
-plt.plot(o, G2*100, lw=2, label = 'Gaussian')
+plt.plot(o, g2, lw=2, label = 'Gaussian')
 plt.legend()
 plt.xlabel ('Count')
 
