@@ -92,11 +92,17 @@ for v in range(len(data)):
     g = G*len(data[v])
     gaussian_the.append(g)
 '''
-w = np.arange(hmin, hmax+1, 0.001)
+w = np.arange(hmin, hmax+1, 1)
 P2 = ((MOM_SDOM[0])**w)*(np.exp(-(MOM_SDOM[0]))/sc.factorial(w))
 p2 = P2*len(data[0])
-    
-G2 = (np.exp((-1/2)*(((w-(MOM_SDOM[0]))/(MOM_SDOM[1]))**2)))/((MOM_SDOM[1])*(np.sqrt(2*np.pi)))
+
+a_o = (((w-(MOM_SDOM[0]))/(MOM_SDOM[1]))**2)
+a = np.zeros(11)
+for x in range(11):
+    a[x] = long((math.exp((-1/2)*(a_o[x]))))
+
+b = (MOM_SDOM[1])*(np.sqrt(2*np.pi))
+G2 = (a)/(b)    
 g2 = G2*len(data[0])
 
 
@@ -143,7 +149,7 @@ for x in range(len(data)):
     #plt.plot(o,poission_the[x], label = 'Poisson')
     #plt.plot(o,gaussian_the[x], label= 'Gaussian')
 
-o = np.arange(hmin, hmax+1, 0.001)
+o = np.arange(hmin, hmax+1, 1)
 plt.plot(o, p2, lw=2, label = 'Poisson')
 plt.plot(o, g2, lw=2, label = 'Gaussian')
 plt.legend()
