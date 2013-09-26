@@ -1,4 +1,53 @@
-1) ~~~~~Question 8   -- light count with 1000 count and 0.001 time span 1-6
+Task 3) ~~~~~ Question 7 -- 5 sets of data
+	tspam = [0.01, 0.0125, 0.025, 0.0375, 0.05] 
+	nspam = 400
+
+	mean and SD of all 5 sets
+	([[[ 17.24   ,   4.34218106],
+        [ 17.0425    ,   4.27332975],
+        [ 16.73      ,   4.03395364],
+        [ 16.66      ,   4.31520016],
+        [ 16.77      ,   4.11697385],
+        [ 17.2625    ,   4.3722288 ]],
+
+       [[ 20.6825    ,   4.58740717],
+        [ 21.0375    ,   5.02186635],
+        [ 21.0575    ,   4.55863429],
+        [ 21.1525    ,   4.8819902 ],
+        [ 20.5925    ,   4.4079495 ],
+        [ 21.25      ,   4.48360981]],
+
+       [[ 41.3875    ,   6.46388415],
+        [ 41.6575    ,   6.63099684],
+        [ 41.9475    ,   6.94985575],
+        [ 42.24      ,   6.71006426],
+        [ 42.3875    ,   7.04317823],
+        [ 41.2625    ,   6.19835808]],
+
+       [[ 63.1125    ,   7.90386116],
+        [ 63.02      ,   8.28530117],
+        [ 63.885     ,   8.34901432],
+        [ 63.885     ,   8.13216486],
+        [ 63.98      ,   8.38453045],
+        [ 63.4675    ,   7.45438552]],
+
+       [[ 83.775     ,   9.62684087],
+        [ 84.39      ,   9.10192356],
+        [ 83.9325    ,   9.43586417],
+        [ 84.87      ,   9.38713993],
+        [ 84.34      ,   9.33822285],
+        [ 83.845     ,   9.41768054]]])
+
+	Graphs: Task7.pdf - non log-log graph
+		Task7_log-log.pdf - log-log graph with proper scaling 
+		Task7_log-log.pdf - log-log graph with not-proper scaling 
+	
+	How mean and SD vary as the mean counts per sample increase? Relationship between 
+mean and variance for counting (Poisson) statistics? Is the scatter plot about line y =x uniform or does it vary? (Uniform) Explain. Do the Poisson distribution break down for large mean? 
+
+	
+
+Task 4) ~~~~~Question 8   -- light count with 1000 count and 0.001 time span 1-6
     
     mean and standard deviation to each graph
      ([[ 1.712     ,  1.39893281],
@@ -12,7 +61,7 @@
     [ 1.69966667,  0.05498242]
 
     mean count rate
-    [ 1699.66666667,    54.98242143])
+    [ 1699.66666667,  54.98242143])
     
     two graphs: Histogram_with_distribution_0.001_1000.pdf - all combined
     		Histogram_with_distribution_0.001_1000_2.pdf - all seperate

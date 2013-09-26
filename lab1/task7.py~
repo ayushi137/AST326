@@ -1,0 +1,31 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import scipy.misc as sc
+import math
+
+x = 1
+data1= [] 
+while x <= 6:
+    dat = np.loadtxt("LONGCOUNTtask7pmtrunno_{0}count0.01.day".format(x))
+    data1.append(dat)
+    x+=1
+
+def mean_SD (data):
+    # mean 
+    answer = np.zeros(2)
+    mean = np.sum(data/np.size(data))
+    answer[0] = mean
+    # standard deviation 
+    hold = []
+    for x in range(data.size):
+        hold.append((data[x]-mean)**2)
+    hold = np.array(hold)
+    # which one of these two are better????????
+    SD = (math.sqrt(sum(hold)/((hold.size) - 1)))
+    # SD = (math.sqrt(sum(hold)/((hold.size) - 1)))/math.sqrt(hold.size)
+    answer[1] = SD
+    return answer
+
+meanSD = np.zeros((len(data),2))
+for x in range(len(data)):    
+    meanSD[x] = mean_SD(data[x])
