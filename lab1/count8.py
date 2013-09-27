@@ -9,7 +9,7 @@ data= []
 
 # Question 8
 while x <= 6:
-    data1 = np.loadtxt("SMALLRATEtask8pmtrunno_{0}count0.001.dat".format(x))
+    data1 = np.loadtxt("LARGESTtask8pmtrunno_{0}count0.1.dat".format(x))
     data.append(data1)
     x+=1
 
@@ -98,31 +98,31 @@ plt.figure(c,figsize=(11, 9))
 
 hist_all = []
 
-#for x in range(len(data)):
+for x in range(len(data)):
     #x = 0
-hmin = 0
-hmax = max(data[x])
-hr = np.arange(hmin, hmax+1)
-w = np.arange(hmin, hmax+1, 0.001)
-plt.figure(c,figsize=(11, 3))
-    #plt.subplot(3,2,x+1)
-hist = np.array([np.where(data[x] ==i)[0].size for i in hr])
-hist_all.append(hist)
-plt.plot(hr,hist, drawstyle='steps-mid', lw=2, color='k', label='Histogram' )
-plt.ylabel ('Frequency')
-plt.xlim (0,10)
-plt.ylim (0,350)
-plt.plot(w,poission_the[x], color='g', lw=2,label='Poisson')
-plt.plot(w,gaussian_the[x], color= 'b', lw=2,label='Gaussian')
-plt.vlines(meanSD[x][0],0,350, color= 'r', lw=2,label='Mean')
-    #plt.vlines(meanSD[x][0] - meanSD[x][1],0,350, color= 'm', lw=1,label='Standard Deviation')
-    #plt.vlines(meanSD[x][0] + meanSD[x][1],0,350, color= 'm', lw=1)
-#plt.title ("1000 samples for 0.001s time spam")
-plt.xlabel ('Count')
-plt.legend(prop = {'size':15})
+    hmin = 0
+    hmax = max(data[x])
+    hr = np.arange(hmin, hmax+1)
+    w = np.arange(hmin, hmax+1, 0.001)
+    #plt.figure(c,figsize=(11, 3))
+    plt.subplot(3,2,x+1)
+    hist = np.array([np.where(data[x] ==i)[0].size for i in hr])
+    hist_all.append(hist)
+    plt.plot(hr,hist, drawstyle='steps-mid', lw=2, color='k', label='Histogram' )
+    plt.ylabel ('Frequency')
+    plt.xlim (100, 200)
+    plt.ylim (0,50)
+    #plt.plot(w,poission_the[x], color='g', lw=2,label='Poisson')
+    plt.plot(w,gaussian_the[x], color= 'b', lw=2,label='Gaussian')
+    plt.vlines(meanSD[x][0],0,50, color= 'r', lw=2,label='Mean')
+    #plt.vlines(meanSD[x][0] - meanSD[x][1],0,50, color= 'm', lw=1,label='Standard Deviation')
+    #plt.vlines(meanSD[x][0] + meanSD[x][1],0,50, color= 'm', lw=1)
+    #plt.title ("1000 samples for 0.001s time spam")
+    plt.xlabel ('Count')
+    plt.legend(prop = {'size':12})
 #   c+=1
-#plt.tight_layout()
-plt.savefig('Histogram_with_distribution_0.001_1000_3_.pdf')
+plt.tight_layout()
+#plt.savefig('Histogram_with_distribution_0.1_1000_2_.pdf')
 '''
 hmin = 0
 hmax = 30

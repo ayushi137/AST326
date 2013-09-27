@@ -36,7 +36,21 @@ Task 3) ~~~~~ Question 7 -- 5 sets of data
         [ 83.9325    ,   9.43586417],
         [ 84.87      ,   9.38713993],
         [ 84.34      ,   9.33822285],
-        [ 83.845     ,   9.41768054]]])
+        [ 83.845     ,   9.41768054]]
+
+	[[ 120.415     ,   11.17295226],
+        [ 120.615     ,   10.50774986],
+        [ 121.0375    ,   10.59418168],
+        [ 121.315     ,   10.95746047],
+        [ 121.99      ,   11.44037173],
+        [ 120.6925    ,   11.49230728]],
+
+       [[ 150.1375    ,   12.54480067],
+        [ 150.97      ,   12.58451529],
+        [ 151.5175    ,   12.40663149],
+        [ 150.7725    ,   12.17276403],
+        [ 150.645     ,   12.61136755],
+        [ 150.275     ,   12.44574693]]])
 
 	Graphs: Task7.pdf - non log-log graph
 		Task7_log-log.pdf - log-log graph with proper scaling 
@@ -63,7 +77,7 @@ Task 4) ~~~~~Question 8   -- light count with 1000 count and 0.001 time span 1-6
     mean count rate
     [ 1699.66666667,  54.98242143])
     
-    two graphs: Histogram_with_distribution_0.001_1000.pdf - all combined
+    three graphs: Histogram_with_distribution_0.001_1000.pdf - all combined
     		Histogram_with_distribution_0.001_1000_2_.pdf - all seperate
 		Histogram_with_distribution_0.001_1000_3_.pdf - with the mean (second data)
 
@@ -82,11 +96,32 @@ Task 4) ~~~~~Question 8   -- light count with 1000 count and 0.001 time span 1-6
    mean count rate
    [ 1664.66666667,    18.09327684] Hz
 
-   two graphs:	Histogram_with_distribution_0.01_400.pdf - all combined
+   three graphs:	Histogram_with_distribution_0.01_400.pdf - all combined
     	       Histogram_with_distribution_0.01_400_2_.pdf - all seperate 
 	       Histogram_with_distribution_0.01_400_3_.pdf - with the mean (second data)
 
-   compare these two and talk about how they are different and similar? Why doesnt the Gaussian works? How do you compare a histogram, which represent the measured counts with a theoretical distribution? Talk about the fact that i had to multiply the probability with the count numbers as in how did i compare measure ( histogram) and theoretical (distribution). I can express my measure as a probability not predict my measures using probability because probability is dependent on mean and SD.
+
+ ~~~~~~Question 8   -- light count with 1000 count and 0.1 time span 1-6
+   mean and standard deviation to each graph
+
+	([[ 150.267     ,   12.43931057],
+       [ 150.34      ,   12.33201032],
+       [ 151.269     ,   11.90497238],
+       [ 150.731     ,   12.47390225],
+       [ 150.831     ,   13.05438072],
+       [ 149.988     ,   12.31306085]])
+
+	 MOM and SDOM
+	([ 150.571     ,    0.46175102])
+
+	mean count rate
+	([ 150571.        ,     461.75101516])
+
+	two graphs: (only gaussian)
+		Histogram_with_distribution_0.1_1000_2_.pdf - all seperate 
+	       	Histogram_with_distribution_0.1_1000_3_.pdf - with the mean (second data)
+
+   compare these two and talk about how they are different and similar? Why doesn't the Gaussian works? How do you compare a histogram, which represent the measured counts with a theoretical distribution? Talk about the fact that i had to multiply the probability with the count numbers as in how did i compare measure ( histogram) and theoretical (distribution). I can express my measure as a probability not predict my measures using probability because probability is dependent on mean and SD.
 
 Task 5) ~~~~~~~ Question 9 -- light on nsamp = [2,4,8,16,32,64,128,256,512,1024,2048] 					tsamp = 0.001
 	MOM and SDOM
@@ -102,3 +137,6 @@ Task 5) ~~~~~~~ Question 9 -- light on nsamp = [2,4,8,16,32,64,128,256,512,1024,
        	[ 1.71777344,  0.05977718],
        	[ 1.73847656,  0.03431366],
        	[ 1.71733425,  0.03874255]])
+
+	Effects of Sample size on mean and standard deviation 
+	Theoretical Standard deviation is (√(mean))

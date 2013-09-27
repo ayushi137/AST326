@@ -4,7 +4,7 @@ import scipy.misc as sc
 import math
 
 
-tspam = [0.01, 0.0125, 0.025, 0.0375, 0.05]
+tspam = [0.01, 0.0125, 0.025, 0.0375, 0.05, 0.08, 0.1]
 data=[]
 for y in tspam:
     print y
@@ -32,7 +32,7 @@ def mean_SD (data):
     answer[1] = SD
     return answer
 
-MSD = np.zeros((5,6,2))
+MSD = np.zeros((7,6,2))
 w=0
 for y in data:
     meanSD = np.zeros((len(y),2))
@@ -42,7 +42,7 @@ for y in data:
     w+=1
 
 plt.figure(1,figsize=(9, 6))
-colors = "bgrcm"
+colors = "bgrcmyk"
 color_index = 0
 for a in MSD:
     xbar = []
@@ -56,15 +56,15 @@ for a in MSD:
     plt.scatter(xbar, s2, c=colors[color_index], label = "Time: {0}s".format(tspam[color_index]) )
     color_index += 1
 
-x = np.arange(0 , 100, 0.1);
+x = np.arange(0 , 160, 0.1);
 y = x
-plt.plot(x, y, 'k', label = "x=y graph")
-plt.xlim(0, 100)
-plt.ylim(0,100)
+plt.plot(x, y, '--k', label = "x=y graph")
+plt.xlim(0, 160)
+plt.ylim(0,170)
 #plt.yscale('log')
 #plt.xscale('log')
 plt.xlabel("Mean")
-#plt.ylabel("Variance (Standard deviation squared)")
+plt.ylabel("Variance (Standard deviation squared)")
 plt.legend(loc =2)
 plt.savefig("graphs/Task7.pdf")
 plt.show()

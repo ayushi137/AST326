@@ -61,14 +61,14 @@ for q in MSDOM:
     SD.append(q[1])
     t+=1
 mean = np.array(mean)
+
 SD_predict = np.sqrt(mean)
 
-
 plt.figure(1,figsize=(9, 6))
-plt.plot(nsamp,mean,lw=2, c='r', label = 'MOM')
-plt.plot(nsamp,SD, lw=2,c='g' , label = 'SDOM')
-plt.plot(nsamp,SD_predict,  lw=2,c='k' , label = '')
-plt.ylim(-1, 3)
+plt.plot(nsamp,mean,lw=2, c='r', label = 'Mean of mean')
+plt.plot(nsamp,SD, lw=2, c='g' , label = 'Standard Deviation of mean')
+plt.plot(nsamp,SD_predict,  lw=2 , c='k' , label = 'Theoretical Standard Deviation')
+plt.ylim(-0.5, )
 plt.xlim(0,2050)
 plt.legend()
 
