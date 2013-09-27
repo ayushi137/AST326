@@ -78,8 +78,8 @@ Task 4) ~~~~~Question 8   -- light count with 1000 count and 0.001 time span 1-6
     [ 1699.66666667,  54.98242143])
     
     three graphs: Histogram_with_distribution_0.001_1000.pdf - all combined
-    		Histogram_with_distribution_0.001_1000_2_.pdf - all seperate
-		Histogram_with_distribution_0.001_1000_3_.pdf - with the mean (second data)
+    		Histogram_with_distribution_0.001_1000_2_.pdf √- all seperate
+		Histogram_with_distribution_0.001_1000_3_.pdf √ - with the mean (second data)
 
  ~~~~~~Question 8   -- light count with 400 count and 0.01 time span 1-6
    mean and standard deviation to each graph
@@ -115,11 +115,11 @@ Task 4) ~~~~~Question 8   -- light count with 1000 count and 0.001 time span 1-6
 	([ 150.571     ,    0.46175102])
 
 	mean count rate
-	([ 150571.        ,     461.75101516])
+	([ 1505.71      ,     4.61751015])
 
 	two graphs: (only gaussian)
-		Histogram_with_distribution_0.1_1000_2_.pdf - all seperate 
-	       	Histogram_with_distribution_0.1_1000_3_.pdf - with the mean (second data)
+		Histogram_with_distribution_0.1_1000_2_.pdf √ - all seperate 
+	       	Histogram_with_distribution_0.1_1000_3_.pdf √ - with the mean (second data)
 
    compare these two and talk about how they are different and similar? Why doesn't the Gaussian works? How do you compare a histogram, which represent the measured counts with a theoretical distribution? Talk about the fact that i had to multiply the probability with the count numbers as in how did i compare measure ( histogram) and theoretical (distribution). I can express my measure as a probability not predict my measures using probability because probability is dependent on mean and SD.
 

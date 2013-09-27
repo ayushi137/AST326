@@ -68,7 +68,7 @@ plt.figure(1,figsize=(9, 6))
 plt.plot(nsamp,mean,lw=2, c='r', label = 'Mean of mean')
 plt.plot(nsamp,SD, lw=2, c='g' , label = 'Standard Deviation of mean')
 plt.plot(nsamp,SD_predict,  lw=2 , c='k' , label = 'Theoretical Standard Deviation')
-plt.ylim(-0.5, )
+plt.ylim(-0.5, 3)
 plt.xlim(0,2050)
 plt.legend()
 

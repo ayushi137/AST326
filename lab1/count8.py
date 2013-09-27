@@ -2,6 +2,7 @@ from PMT import*
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.misc as sc
+import scipy.stats as scs
 import math
 
 x = 1
@@ -16,7 +17,7 @@ while x <= 6:
 #LARGESETpmtrunno_{0}
 #SMALLRATEtask8pmtrunno_{0}count0.001
 
-tsamp = 0.001
+tsamp = 0.1
 nsamp = 100
 
 
@@ -78,12 +79,14 @@ for v in range(len(data)):
     #v = 0
     hmin = 0
     hmax = max(data[v])
-    w = np.arange(hmin, hmax+1, 0.001)
+    w = np.arange(hmin, hmax+1)
 
     P = ((meanSD[v][0])**w)*(np.exp(-(meanSD[v][0]))/sc.factorial(w))
-    p = P*len(data[v])
+    P_big = scs.poisson(meanSD[v][0]).pmf(w)
+    p = P_big*len(data[v])
     poission_the.append(p)
     
+    w = np.arange(hmin, hmax+1, 0.001)
     G = (np.exp((-1/2)*(((w-(meanSD[v][0]))/(meanSD[v][1]))**2)))/((meanSD[v][1])*(np.sqrt(2*np.pi)))
     g = G*len(data[v])
     gaussian_the.append(g)
@@ -99,20 +102,20 @@ plt.figure(c,figsize=(11, 9))
 hist_all = []
 
 for x in range(len(data)):
-    #x = 0
+#x = 0
     hmin = 0
     hmax = max(data[x])
     hr = np.arange(hmin, hmax+1)
     w = np.arange(hmin, hmax+1, 0.001)
-    #plt.figure(c,figsize=(11, 3))
+#plt.figure(c,figsize=(9, 6))
     plt.subplot(3,2,x+1)
     hist = np.array([np.where(data[x] ==i)[0].size for i in hr])
     hist_all.append(hist)
     plt.plot(hr,hist, drawstyle='steps-mid', lw=2, color='k', label='Histogram' )
     plt.ylabel ('Frequency')
-    plt.xlim (100, 200)
+    plt.xlim (100,200)
     plt.ylim (0,50)
-    #plt.plot(w,poission_the[x], color='g', lw=2,label='Poisson')
+    plt.plot(hr,poission_the[x], color='g', lw=2,label='Poisson')
     plt.plot(w,gaussian_the[x], color= 'b', lw=2,label='Gaussian')
     plt.vlines(meanSD[x][0],0,50, color= 'r', lw=2,label='Mean')
     #plt.vlines(meanSD[x][0] - meanSD[x][1],0,50, color= 'm', lw=1,label='Standard Deviation')
@@ -121,8 +124,8 @@ for x in range(len(data)):
     plt.xlabel ('Count')
     plt.legend(prop = {'size':12})
 #   c+=1
-plt.tight_layout()
-#plt.savefig('Histogram_with_distribution_0.1_1000_2_.pdf')
+    plt.tight_layout()
+plt.savefig('graphs/Histogram_with_distribution_0.1_1000_2_.pdf')
 '''
 hmin = 0
 hmax = 30
