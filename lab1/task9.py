@@ -43,33 +43,43 @@ for y in data:
     w+=1
 
 MSDOM = np.zeros((11,2))
+mu = np.zeros((11,10))
+sigma = np.zeros((11,10))
 h=0
 for e in MSD:
     m1 = np.zeros(10)
+    m2 = np.zeros(10)
     for x in range(10):
         m1[x] = e[x][0]
+        m2[x] = e[x][1]
+    mu[h] = m1
+    sigma[h] = m2
     MSDOM[h] = mean_SD(m1)
     h+=1
 
 mean = []
 SD = []
-SD_predict = []
+
 t = 0
 for q in MSDOM:
-    SD_predict.append(q[0]/(np.sqrt(nsamp[t])))
+    #SD_predict.append(q[0]/(np.sqrt(nsamp[t])))
     mean.append(q[0])
     SD.append(q[1])
     t+=1
 mean = np.array(mean)
 
-SD_predict = np.sqrt(mean)
+###### - get the standard deviation
+SD_predict = []
+for d in mu:
+    predict = np.sqrt(mu)
 
 plt.figure(1,figsize=(9, 6))
 plt.plot(nsamp,mean,lw=2, c='r', label = 'Mean of mean')
 plt.plot(nsamp,SD, lw=2, c='g' , label = 'Standard Deviation of mean')
-plt.plot(nsamp,SD_predict,  lw=2 , c='k' , label = 'Theoretical Standard Deviation')
+#plt.plot(nsamp,SD_predict,  lw=2 , c='k' , label = 'Theoretical Standard Deviation')
 plt.ylim(-0.5, 3)
 plt.xlim(0,2050)
 plt.legend()
+#plt.savefig("graphs/task9.pdf")
 
 plt.show()

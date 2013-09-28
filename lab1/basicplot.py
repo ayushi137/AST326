@@ -7,15 +7,21 @@ import math
 x = 1
 data= [] 
 
-tsamp=100
+tsamp=0.01
 
 # Question 1 - 5
-while x <= 6:
-    data1 = np.loadtxt("dark_{0}_0.001_{1}.dat".format(x, tsamp))
+text = ["test_1_0.001_100.dat","SMALLRATEtask8pmtrunno_1count0.001.dat","LARGESETpmtrunno_1.dat","LONGCOUNTtask7pmtrunno_1count0.05.dat"]
+for x in text:
+    data1 = np.loadtxt(x)
     data.append(data1)
-    x+=1
+'''
+text =[[0.001,100],[0.001,1000],[0.01,400]]
+for x in text:
+    data1 = np.loadtxt("dark_1_{0}_{1}.dat".format(x[0],x[1]))
+    data.append(data1)
+'''
 
-# ~~~~~~~~~~~~~~~~~~~~ mean and standard deviation 
+# ~~~~~~~~~~~~~~~~~~~~ mean and standard deviation
 
 # this can be used for any data
 
@@ -42,8 +48,7 @@ for x in range(len(data)):
 #### meanSD is an array which has mean and standard deviation of each data set
 
 # ~~~~~~~~~~~~~~~~~~~~~ mean count rate
-
-count_rate = meanSD/tsamp              # count rate is x/time
+count_rate = meanSD/tsamp             # count rate is x/time
 m2 = np.zeros(count_rate.shape[0])
 for x in range(count_rate.shape[0]):
     m2[x] = count_rate[x][0]
@@ -52,39 +57,55 @@ meanSD_rate = mean_SD(m2)
 
 
 #######################################################
-colors = "bgrcmykw"
+colors = "bgrmcykw"
+c_i = 0
 c = 1
 # ~~~~~~~~~~~~~~~~~~~to plot the graph
-plt.figure(c,figsize=(9, 8))
+labels = ["0.001", "0.001", "0.01", "0.05"]
+plt.figure(c,figsize=(13, 5))
 for x in range(len(data)):
-    #plt.figure(c,figsize=(11, 3))
-    plt.subplot(6,1,x+1)
-    plt.plot (data[x], 'm', drawstyle = 'steps-mid')
+    #plt.figure(c,figsize=(13, 2))
+    plt.subplot(len(data),1,x+1)
+    plt.plot (data[x], drawstyle = 'steps-mid', color=colors[c_i], label =labels[c_i])
     plt.ylim (0,max(data[x]),2)
+    if c_i == 3:
+        plt.ylim(20, 140)
     plt.ylabel('Time (ms)')
-    plt.tight_layout()
-    c+=1
+    plt.legend()
+    c_i += 1
+    #c+=1
+#plt.ylim (0,6)
 plt.xlabel('Count')
+plt.tight_layout()
+
+#plt.savefig ("graphs/dark_plots.pdf")
 c+=1
 
 
-plt.figure(c,figsize=(13, 9))
+#~~~~~~~~~~~~~~~~
+c_i = 0
+plt.figure(c,figsize=(13, 5))
 
 hist_all = []
 hmin = 0
 hmax = 35
-
+labels = ["0.001 for 100", "0.001 for 1000", "0.01 for 400", "0.05 for 400"]
 for x in range(len(data)):
     hmin = min(data[x])
     hmax = max(data[x])
     hr = np.arange(hmin, hmax+1)
     o = np.arange(hmin, hmax+1, 0.001)
     #plt.figure(c,figsize=(11, 3))
-    plt.subplot(3,2,x+1)
+    plt.subplot(len(data),1,x+1)
     hist = np.array([np.where(data[x] ==i)[0].size for i in hr])
     hist_all.append(hist)
-    plt.plot(hr,hist, drawstyle='steps-mid', lw=1.5  )
+    plt.plot(hr,hist, drawstyle='steps-mid', lw=1.5, color=colors[c_i], label =labels[c_i]  )
     plt.ylabel ('Frequency')
-
+    #plt.ylim(0,50)
+    plt.legend()
+    c_i += 1
+plt.xlabel ('Count')
+plt.tight_layout()
+#plt.savefig ("graphs/dark_hist.pdf")
 
 plt.show()

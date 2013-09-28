@@ -97,35 +97,35 @@ c = 1
 
 # ~~~~~~~~~~~~~~~~to plot the histograms
 
-plt.figure(c,figsize=(11, 9))
+#plt.figure(c,figsize=(11, 9))
 
 hist_all = []
 
-for x in range(len(data)):
-#x = 0
-    hmin = 0
-    hmax = max(data[x])
-    hr = np.arange(hmin, hmax+1)
-    w = np.arange(hmin, hmax+1, 0.001)
-#plt.figure(c,figsize=(9, 6))
-    plt.subplot(3,2,x+1)
-    hist = np.array([np.where(data[x] ==i)[0].size for i in hr])
-    hist_all.append(hist)
-    plt.plot(hr,hist, drawstyle='steps-mid', lw=2, color='k', label='Histogram' )
-    plt.ylabel ('Frequency')
-    plt.xlim (100,200)
-    plt.ylim (0,50)
-    plt.plot(hr,poission_the[x], color='g', lw=2,label='Poisson')
-    plt.plot(w,gaussian_the[x], color= 'b', lw=2,label='Gaussian')
-    plt.vlines(meanSD[x][0],0,50, color= 'r', lw=2,label='Mean')
+#for x in range(len(data)):
+x = 0
+hmin = 0
+hmax = max(data[x])
+hr = np.arange(hmin, hmax+1)
+w = np.arange(hmin, hmax+1, 0.001)
+plt.figure(c,figsize=(9, 6))
+#plt.subplot(3,2,x+1)
+hist = np.array([np.where(data[x] ==i)[0].size for i in hr])
+hist_all.append(hist)
+plt.plot(hr,hist, drawstyle='steps-mid', lw=2, color='k', label='Histogram' )
+plt.ylabel ('Frequency')
+plt.xlim (100,200)
+plt.ylim (0,40)
+plt.plot(hr,poission_the[x], color='g', lw=2,label='Poisson')
+plt.plot(w,gaussian_the[x], color= 'b', lw=2,label='Gaussian')
+plt.vlines(meanSD[x][0],0,50, color= 'r', lw=2,label='Mean')
     #plt.vlines(meanSD[x][0] - meanSD[x][1],0,50, color= 'm', lw=1,label='Standard Deviation')
     #plt.vlines(meanSD[x][0] + meanSD[x][1],0,50, color= 'm', lw=1)
     #plt.title ("1000 samples for 0.001s time spam")
-    plt.xlabel ('Count')
-    plt.legend(prop = {'size':12})
+plt.xlabel ('Count')
+plt.legend(prop = {'size':12})
 #   c+=1
-    plt.tight_layout()
-plt.savefig('graphs/Histogram_with_distribution_0.1_1000_2_.pdf')
+plt.tight_layout()
+#plt.savefig('graphs/Histogram_with_distribution_0.1_1000_3_.pdf')
 '''
 hmin = 0
 hmax = 30

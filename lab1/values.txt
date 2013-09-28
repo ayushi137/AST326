@@ -121,7 +121,7 @@ Task 4) ~~~~~Question 8   -- light count with 1000 count and 0.001 time span 1-6
 		Histogram_with_distribution_0.1_1000_2_.pdf √ - all seperate 
 	       	Histogram_with_distribution_0.1_1000_3_.pdf √ - with the mean (second data)
 
-   compare these two and talk about how they are different and similar? Why doesn't the Gaussian works? How do you compare a histogram, which represent the measured counts with a theoretical distribution? Talk about the fact that i had to multiply the probability with the count numbers as in how did i compare measure ( histogram) and theoretical (distribution). I can express my measure as a probability not predict my measures using probability because probability is dependent on mean and SD.
+   compare these two and talk about how they are different and similar? Why doesn't the Gaussian works? How do you compare a histogram, which represent the measured counts with a theoretical distribution? Talk about the fact that i had to multiply the probability with the count numbers as in how did i compare measure ( histogram) and theoretical (distribution). I can express my measure as a probability not predict my measures using probability because probability is dependent on mean and SD. Problem the factorial function doesn't work for big number so had to use pre-made python module
 
 Task 5) ~~~~~~~ Question 9 -- light on nsamp = [2,4,8,16,32,64,128,256,512,1024,2048] 					tsamp = 0.001
 	MOM and SDOM
@@ -139,4 +139,8 @@ Task 5) ~~~~~~~ Question 9 -- light on nsamp = [2,4,8,16,32,64,128,256,512,1024,
        	[ 1.71733425,  0.03874255]])
 
 	Effects of Sample size on mean and standard deviation 
-	Theoretical Standard deviation is (√(mean))
+	Theoretical Standard deviation is (√(mean)/√N) = √(mean count per sample)/sample size
+	if want to improve the accuracy of a measurement of the mean by a factor of two then by what factor do i need to improve the number of sample? by 4
+
+	how accurate is MOM?
+
