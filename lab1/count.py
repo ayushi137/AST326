@@ -121,27 +121,22 @@ c+=1
 # ~~~~~~~~~~~~~~~~to plot the histograms
 
 plt.figure(c,figsize=(13, 9))
-color_index = 0
 
 hist_all = []
 hmin = 0
 hmax = 35
 
 for x in range(len(data)):
-    #hmin = min(data[x])
-    #hmax = max(data[x])
-    print hmax
+    hmin = min(data[x])
+    hmax = max(data[x])
     hr = np.arange(hmin, hmax+1)
     o = np.arange(hmin, hmax+1, 0.001)
     #plt.figure(c,figsize=(11, 3))
-    #plt.subplot(3,2,x+1)
+    plt.subplot(3,2,x+1)
     hist = np.array([np.where(data[x] ==i)[0].size for i in hr])
     hist_all.append(hist)
-    plt.plot(hr,hist, drawstyle='steps-mid', lw=1.5 , c=colors[color_index]  )#label = 'Histogram')#
-    color_index += 1
+    plt.plot(hr,hist, drawstyle='steps-mid', lw=1.5  )
     plt.ylabel ('Frequency')
-    #plt.plot(o,poission_the[x], label = 'Poisson')
-    #plt.plot(o,gaussian_the[x], label= 'Gaussian')
 
 o = np.arange(hmin, hmax+1, 0.001)
 plt.plot(o, p2, lw=2, label = 'Poisson')

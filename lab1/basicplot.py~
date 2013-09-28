@@ -1,0 +1,29 @@
+from PMT import*
+import numpy as np
+import matplotlib.pyplot as plt
+import scipy.misc as sc
+import math
+
+x = 1
+data= [] 
+
+# Question 1 - 5
+while x <= 6:
+    data1 = np.loadtxt("dark_{0}_0.001_100.dat".format(x))
+    data.append(data1)
+    x+=1
+
+colors = "bgrcmykw"
+c = 1
+# ~~~~~~~~~~~~~~~~~~~to plot the graph
+plt.figure(c,figsize=(13, 8.5))
+for x in range(len(data)):
+    #plt.figure(c,figsize=(11, 3))
+    plt.subplot(6,1,x+1)
+    plt.plot (data[x], 'm', drawstyle = 'steps-mid')
+    plt.ylim (0,max(data[x]),2)
+    plt.ylabel('Time (ms)')
+    plt.tight_layout()
+    c+=1
+plt.xlabel('Count')
+c+=1
