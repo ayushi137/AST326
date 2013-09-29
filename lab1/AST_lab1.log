@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 SEP 2013 03:25
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 SEP 2013 03:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -250,7 +250,14 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box29
 \@float@everytoks=\toks23
 \@floatcapt=\box30
-) (./AST_lab1.aux)
+) (./AST_lab1.aux
+
+LaTeX Warning: Label `fig:dark_plot' multiply defined.
+
+
+LaTeX Warning: Label `fig:dark_hist' multiply defined.
+
+)
 \openout1 = `AST_lab1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -267,7 +274,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 21.
@@ -437,28 +444,34 @@ Package pdftex.def Info: graphs/Hist_distribution_big.pdf used on input line 15
 4.
 (pdftex.def)             Requested size: 650.4284pt x 433.61894pt.
 
+<graphs/task9.pdf, id=243, 650.43pt x 433.62pt>
+File: graphs/task9.pdf Graphic file (type pdf)
+ <use graphs/task9.pdf>
+Package pdftex.def Info: graphs/task9.pdf used on input line 167.
+(pdftex.def)             Requested size: 650.4284pt x 433.61894pt.
+ [7 <./graphs/Hist_distribution_small.pdf> <./graphs/Hist_distribution_big.pdf
 
-Package natbib Warning: Citation `adams1995hitchhiker' on page 7 undefined on i
-nput line 168.
+pdfTeX warning: /usr/texbin/pdflatex (file ./graphs/Hist_distribution_big.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+>]
+
+Package natbib Warning: Citation `adams1995hitchhiker' on page 8 undefined on i
+nput line 176.
 
 No file AST_lab1.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-[7 <./graphs/Hist_distribution_small.pdf> <./graphs/Hist_distribution_big.pdf
+[8 <./graphs/task9.pdf>] (./AST_lab1.aux)
 
-pdfTeX warning: /usr/texbin/pdflatex (file ./graphs/Hist_distribution_big.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
->] [8] (./AST_lab1.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5241 strings out of 493488
- 78080 string characters out of 3141326
- 146342 words of memory out of 3000000
- 8478 multiletter control sequences out of 15000+200000
+ 5247 strings out of 493488
+ 78183 string characters out of 3141326
+ 146424 words of memory out of 3000000
+ 8483 multiletter control sequences out of 15000+200000
  6363 words of font info for 23 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,8n,38p,322b,290s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -467,10 +480,10 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on AST_lab1.pdf (8 pages, 211541 bytes).
+Output written on AST_lab1.pdf (8 pages, 222040 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
+ 374 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

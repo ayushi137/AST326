@@ -69,17 +69,26 @@ for q in MSDOM:
 mean = np.array(mean)
 
 ###### - get the standard deviation
-SD_predict = []
+#predict = np.zeros((11,10))
+SD_predict = np.zeros(11)
+o = 0
 for d in mu:
-    predict = np.sqrt(mu)
+    predict= np.sqrt(d/nsamp[o])
+    SD_predict[o] = mean_SD (predict)[0]
+    o+=1
+
+
 
 plt.figure(1,figsize=(9, 6))
-plt.plot(nsamp,mean,lw=2, c='r', label = 'Mean of mean')
-plt.plot(nsamp,SD, lw=2, c='g' , label = 'Standard Deviation of mean')
-#plt.plot(nsamp,SD_predict,  lw=2 , c='k' , label = 'Theoretical Standard Deviation')
+plt.plot(nsamp,mean,lw=2, c='g', label = 'Mean of Mean')
+plt.plot(nsamp,SD, lw=2, c='r' , label = 'Standard Deviation of Mean')
+plt.plot(nsamp,SD_predict,  lw=2 , c='k', linestyle='--' , label = 'Theoretical Standard Deviation')
 plt.ylim(-0.5, 3)
 plt.xlim(0,2050)
+plt.xlabel('Number of samples')
+plt.ylabel('Count')
 plt.legend()
+plt.tight_layout()
 #plt.savefig("graphs/task9.pdf")
 
 plt.show()
