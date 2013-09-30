@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 SEP 2013 03:52
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 SEP 2013 23:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -250,7 +250,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box29
 \@float@everytoks=\toks23
 \@floatcapt=\box30
-) (./AST_lab1.aux
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(./AST_lab1.aux
 
 LaTeX Warning: Label `fig:dark_plot' multiply defined.
 
@@ -260,24 +264,24 @@ LaTeX Warning: Label `fig:dark_hist' multiply defined.
 )
 \openout1 = `AST_lab1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 25.
  (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    ... okay on input line 25.
 
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -373,117 +377,136 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<graphs/task1.pdf, id=1, 578.16pt x 578.16pt>
-File: graphs/task1.pdf Graphic file (type pdf)
- <use graphs/task1.pdf>
-Package pdftex.def Info: graphs/task1.pdf used on input line 63.
-(pdftex.def)             Requested size: 578.15858pt x 578.15858pt.
- [1
+
+Package natbib Warning: Citation `PMT' on page 1 undefined on input line 50.
+
+
+Package natbib Warning: Citation `Module' on page 1 undefined on input line 50.
+
+
+[1
 
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<graphs/task1_hist.pdf, id=11, 578.16pt x 433.62pt>
-File: graphs/task1_hist.pdf Graphic file (type pdf)
+[2] <graphs/task1.pdf, id=16, 939.51pt x 578.16pt>
+File: graphs/task1.pdf Graphic file (type pdf)
+ <use graphs/task1.pdf>
+Package pdftex.def Info: graphs/task1.pdf used on input line 137.
+(pdftex.def)             Requested size: 939.5077pt x 578.15858pt.
 
-<use graphs/task1_hist.pdf>
-Package pdftex.def Info: graphs/task1_hist.pdf used on input line 70.
-(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
- [2 <./graphs/task1.pdf>]
-<graphs/diff_plots.pdf, id=43, 939.51pt x 578.16pt>
+<graphs/diff_plots.pdf, id=17, 939.51pt x 578.16pt>
 File: graphs/diff_plots.pdf Graphic file (type pdf)
 
 <use graphs/diff_plots.pdf>
-Package pdftex.def Info: graphs/diff_plots.pdf used on input line 79.
+Package pdftex.def Info: graphs/diff_plots.pdf used on input line 144.
 (pdftex.def)             Requested size: 939.5077pt x 578.15858pt.
- [3 <./graphs/task1_hist.pdf>]
-<graphs/diff_hist.pdf, id=71, 939.51pt x 578.16pt>
+ [3 <./graphs/task1.pdf>]
+<graphs/diff_hist.pdf, id=50, 939.51pt x 578.16pt>
 File: graphs/diff_hist.pdf Graphic file (type pdf)
  <use graphs/diff_hist.pdf>
-Package pdftex.def Info: graphs/diff_hist.pdf used on input line 86.
+Package pdftex.def Info: graphs/diff_hist.pdf used on input line 151.
 (pdftex.def)             Requested size: 939.5077pt x 578.15858pt.
 
-<graphs/dark_plots.pdf, id=72, 939.51pt x 361.35pt>
-File: graphs/dark_plots.pdf Graphic file (type pdf)
-
-<use graphs/dark_plots.pdf>
-Package pdftex.def Info: graphs/dark_plots.pdf used on input line 100.
-(pdftex.def)             Requested size: 939.5077pt x 361.34912pt.
- [4 <./graphs/diff_plots.pdf> <./graphs/diff_hist.pdf
+[4 <./graphs/diff_plots.pdf> <./graphs/diff_hist.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./graphs/diff_hist.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
->] <graphs/dark_hist.pdf, id=135, 939.51pt x 361.35pt>
-File: graphs/dark_hist.pdf Graphic file (type pdf)
+>] <graphs/dark_plots.pdf, id=110, 939.51pt x 361.35pt>
+File: graphs/dark_plots.pdf Graphic file (type pdf)
 
-<use graphs/dark_hist.pdf>
-Package pdftex.def Info: graphs/dark_hist.pdf used on input line 107.
+<use graphs/dark_plots.pdf>
+Package pdftex.def Info: graphs/dark_plots.pdf used on input line 219.
+(pdftex.def)             Requested size: 939.5077pt x 361.34912pt.
+ [5]
+<graphs/dark_hist.pdf, id=114, 939.51pt x 361.35pt>
+File: graphs/dark_hist.pdf Graphic file (type pdf)
+ <use graphs/dark_hist.pdf>
+Package pdftex.def Info: graphs/dark_hist.pdf used on input line 226.
 (pdftex.def)             Requested size: 939.5077pt x 361.34912pt.
 
-<graphs/Task7_log-log.pdf, id=136, 650.43pt x 433.62pt>
-File: graphs/Task7_log-log.pdf Graphic file (type pdf)
 
-<use graphs/Task7_log-log.pdf>
-Package pdftex.def Info: graphs/Task7_log-log.pdf used on input line 133.
-(pdftex.def)             Requested size: 650.4284pt x 433.61894pt.
- [5 <./graphs/dark_plots.pdf> <./graphs/dark_hist.pdf
+Package natbib Warning: Citation `Stat' on page 6 undefined on input line 242.
+
+[6 <./graphs/dark_plots.pdf> <./graphs/dark_hist.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./graphs/dark_hist.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
->] <graphs/Hist_distribution_small.pdf, id=196, 650.43pt x 433.62pt>
+>] <graphs/Task7_log-log.pdf, id=171, 650.43pt x 433.62pt>
+File: graphs/Task7_log-log.pdf Graphic file (type pdf)
+
+<use graphs/Task7_log-log.pdf>
+Package pdftex.def Info: graphs/Task7_log-log.pdf used on input line 253.
+(pdftex.def)             Requested size: 650.4284pt x 433.61894pt.
+
+<graphs/Hist_distribution_small.pdf, id=172, 650.43pt x 433.62pt>
 File: graphs/Hist_distribution_small.pdf Graphic file (type pdf)
 
 <use graphs/Hist_distribution_small.pdf>
 Package pdftex.def Info: graphs/Hist_distribution_small.pdf used on input line 
-147.
+267.
 (pdftex.def)             Requested size: 650.4284pt x 433.61894pt.
- [6 <./graphs/Task7_log-log.pdf>]
-<graphs/Hist_distribution_big.pdf, id=242, 650.43pt x 433.62pt>
+ [7 <./graphs/Task7_log-log.pdf>]
+<graphs/Hist_distribution_big.pdf, id=220, 650.43pt x 433.62pt>
 File: graphs/Hist_distribution_big.pdf Graphic file (type pdf)
 
 <use graphs/Hist_distribution_big.pdf>
-Package pdftex.def Info: graphs/Hist_distribution_big.pdf used on input line 15
+Package pdftex.def Info: graphs/Hist_distribution_big.pdf used on input line 27
 4.
 (pdftex.def)             Requested size: 650.4284pt x 433.61894pt.
-
-<graphs/task9.pdf, id=243, 650.43pt x 433.62pt>
-File: graphs/task9.pdf Graphic file (type pdf)
- <use graphs/task9.pdf>
-Package pdftex.def Info: graphs/task9.pdf used on input line 167.
-(pdftex.def)             Requested size: 650.4284pt x 433.61894pt.
- [7 <./graphs/Hist_distribution_small.pdf> <./graphs/Hist_distribution_big.pdf
+ [8 <./graphs/Hist_distribution_small.pdf> <./graphs/Hist_distribution_big.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./graphs/Hist_distribution_big.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
 >]
 
-Package natbib Warning: Citation `adams1995hitchhiker' on page 8 undefined on i
-nput line 176.
+Package natbib Warning: Citation `Stat' on page 9 undefined on input line 286.
+
+
+Package natbib Warning: Citation `error' on page 9 undefined on input line 286.
+
+
+<graphs/task9.pdf, id=291, 650.43pt x 433.62pt>
+File: graphs/task9.pdf Graphic file (type pdf)
+ <use graphs/task9.pdf>
+Package pdftex.def Info: graphs/task9.pdf used on input line 298.
+(pdftex.def)             Requested size: 650.4284pt x 433.61894pt.
+ [9 <./graphs/task9.pdf>]
+
+Package natbib Warning: Citation `adams1995hitchhiker' on page 10 undefined on 
+input line 308.
 
 No file AST_lab1.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-[8 <./graphs/task9.pdf>] (./AST_lab1.aux)
+[10] (./AST_lab1.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5247 strings out of 493488
- 78183 string characters out of 3141326
- 146424 words of memory out of 3000000
- 8483 multiletter control sequences out of 15000+200000
- 6363 words of font info for 23 fonts, out of 3000000 for 9000
+ 5299 strings out of 493488
+ 78787 string characters out of 3141326
+ 152593 words of memory out of 3000000
+ 8519 multiletter control sequences out of 15000+200000
+ 12750 words of font info for 46 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,8n,38p,322b,290s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,9n,38p,1152b,290s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on AST_lab1.pdf (8 pages, 222040 bytes).
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
+al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local
+/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
+xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on AST_lab1.pdf (10 pages, 279386 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 376 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

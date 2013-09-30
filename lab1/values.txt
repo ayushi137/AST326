@@ -81,25 +81,6 @@ Task 4) ~~~~~Question 8   -- light count with 1000 count and 0.001 time span 1-6
     		Histogram_with_distribution_0.001_1000_2_.pdf √- all seperate
 		Histogram_with_distribution_0.001_1000_3_.pdf √ - with the mean (second data)
 
- ~~~~~~Question 8   -- light count with 400 count and 0.01 time span 1-6
-   mean and standard deviation to each graph
-     ([[  16.5075    ,   4.13614712],
-       [ 16.69      ,   3.9316083 ],
-       [ 16.405     ,   4.08260261],
-       [ 16.6225    ,   4.16694159],
-       [ 16.9225    ,   4.10287432],
-       [ 16.7325    ,   4.21430239]])
-
-    MOM and SDOM
-   [ 16.64666667,   0.18093277]
-
-   mean count rate
-   [ 1664.66666667,    18.09327684] Hz
-
-   three graphs:	Histogram_with_distribution_0.01_400.pdf - all combined
-    	       Histogram_with_distribution_0.01_400_2_.pdf - all seperate 
-	       Histogram_with_distribution_0.01_400_3_.pdf - with the mean (second data)
-
 
  ~~~~~~Question 8   -- light count with 1000 count and 0.1 time span 1-6
    mean and standard deviation to each graph

@@ -8,7 +8,7 @@ x = 1
 data= [] 
 
 tsamp=0.01
-
+'''
 # Question 1 - 5
 text = ["test_1_0.001_100.dat","SMALLRATEtask8pmtrunno_1count0.001.dat","LARGESETpmtrunno_1.dat","LONGCOUNTtask7pmtrunno_1count0.05.dat"]
 for x in text:
@@ -16,10 +16,12 @@ for x in text:
     data.append(data1)
 '''
 text =[[0.001,100],[0.001,1000],[0.01,400]]
+text = [1 , 2, 3, 4, 5, 6]
 for x in text:
-    data1 = np.loadtxt("dark_1_{0}_{1}.dat".format(x[0],x[1]))
+    data1 = np.loadtxt("test_{0}_0.001_100.dat".format(x))
     data.append(data1)
-'''
+
+
 
 # ~~~~~~~~~~~~~~~~~~~~ mean and standard deviation
 
@@ -61,26 +63,28 @@ colors = "bgrmcykw"
 c_i = 0
 c = 1
 # ~~~~~~~~~~~~~~~~~~~to plot the graph
-labels = ["0.001", "0.001", "0.01", "0.05"]
-plt.figure(c,figsize=(13, 5))
+labels = ["0.001s", "0.001s", "0.01s", "0.05s"]
+plt.figure(c,figsize=(13, 8))
 for x in range(len(data)):
     #plt.figure(c,figsize=(13, 2))
     plt.subplot(len(data),1,x+1)
-    plt.plot (data[x], drawstyle = 'steps-mid', color=colors[c_i], label =labels[c_i])
+    plt.plot (data[x], drawstyle = 'steps-mid', color='g')#color=colors[c_i], label =labels[c_i])
     plt.ylim (0,max(data[x]),2)
+    '''
     if c_i == 3:
         plt.ylim(20, 140)
-    plt.ylabel('Time (ms)')
     plt.legend()
     c_i += 1
     #c+=1
+    '''
 #plt.ylim (0,6)
-plt.xlabel('Count')
+    plt.ylabel('Count')
+plt.xlabel('Time(ms)')
 plt.tight_layout()
 
-#plt.savefig ("graphs/dark_plots.pdf")
+plt.savefig ("graphs/task1.pdf")
 c+=1
-
+'''
 
 #~~~~~~~~~~~~~~~~
 c_i = 0
@@ -107,5 +111,6 @@ for x in range(len(data)):
 plt.xlabel ('Count')
 plt.tight_layout()
 #plt.savefig ("graphs/dark_hist.pdf")
+'''
 
 plt.show()
