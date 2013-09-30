@@ -42,7 +42,7 @@ This experiment examined the distribution of photon collected using PMT for diff
 %####################### Introduction
 \section{Introduction}
 \label{sec:introduction}
-The purpose of this report is to discuss the physical limitation of detecting light. The two main parameters: Number of samples and time interval will be explored. Photons collected through PMT with these parameter produce a histogram that fits the poisson distribution. In this report, this idea will be tested and compared to other distributions. The report will also investigate the fundamental statistics and plots created using Python.
+The purpose of this report is to discuss the physical limitation of detecting light. The two main parameters: Number of samples and time interval was explored. Photons collected through PMT with these parameter produce a histogram that fits the poisson distribution. In this report, this idea was tested and compared to other distributions. The report also investigate the fundamental statistics and plots created using Python.
 
 %####################### Equipment
 \section{Equipment and Method}
@@ -228,52 +228,67 @@ Green&  0.49&  0.69&  490\\
 
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+From Figure \ref{fig:dark_plot} and \ref{fig:dark_hist}, it is clear that there is some noise in the PMT. Blue and green plots have more counts at zero where time is 0.001s. However, in red plot, there is a peak at 4 and 6 count showing that by increasing the time to 0.01s, more noise was introduced. There are few factors that could have contributed to this noise. PMT is not perfect black box and some of the photons from outside were detected. Another contributor to the noise could possibly be the internal heat of the PMT. Upon heating up, the PMT could have released photons that were detected. It explains the larger mean and standard deviation for red and green compared to blue in Table \ref{table:dark}. PMT is working for longer period of time. 
 
 %####################### count rate 
 \subsection{Count rates of different sample}
 \label{sec:countrate}
 
+Data number 1and 2 from Table \ref{table:dataset} is 6 sets of data for 100 and 400 number of samples, respectively . It was used to calculate mean and standard deviation for every data set using Equation \ref{eq:mean} and \ref{eq:SD}. Count rate was calculated by $\frac{mean}{time\;interval}$. Then the mean and standard deviation of the 6 count rates for each set was calculated using same equation. The mean and standard deviation of count rate is:
+\begin{itemize}
+\item For 100 number of samples: 1366.67 and 43.20
+\item For 400 number of samples: 1664.67 and 18.09
+\end {itemize}
+From the result it clear that by increasing the number of samples, higher count rate can be obtained with smaller standard deviation. 
+
+
 %####################### mean and variance
 \subsection{Relationship between mean and variance}
 \label{sec:meanandvariance}
-Data set 3-9 from table \ref{table:dataset} is used to calculate and analyze the relationship between the mean and variance. Mean is calculated using Equation \ref{eq:mean}. And variance is standard deviation squared \citep{Stat}; therefore, it is $\sigma^{2}$, where sigma is from Equation \ref{eq:SD}. 
+Data number 3-9 from Table \ref{table:dataset} was used to calculate and analyze the relationship between the mean and variance. Mean is calculated using Equation \ref{eq:mean}. And variance is standard deviation squared \citep{Stat}; therefore, it is $\sigma^{2}$, where sigma is from Equation \ref{eq:SD}. 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-%\begin{figure}[H]
-%\centering
-%\includegraphics[angle=0,height=10cm,width=15.5cm]{graphs/Task7.pdf}
-%\label{fig:task7}
-%\end{figure}
-
 \begin{figure}[H]
 \centering
-\centering
-\includegraphics[angle=0,height=10cm,width=15.5cm]{graphs/Task7_log-log.pdf}
-\label{fig:task7_log}
+\includegraphics[angle=0,height=9.5cm,width=15.5cm]{graphs/Task7_log-log.pdf}
+\label{fig:task7log}
 \caption{Mean vs. Variance (standard deviation squared) log-log graph. The sample size for all the data is 400. There are six sets of data for each of seven different time interval.}
 \end{figure}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-What does this represent/show.
+Data here have 400 number of sample each but various in time interval. The log-log graph (Figure 6) of mean vs. variance clearly show a linear relationship. The line $y=x$ runs through the middle of the data points, even for the large number. That is, as the time interval increases the mean and the variance increases with linear proportionality. This can be interpreted as property of poisson distribution \citep{Stat}, where mean is equal to variance. 
 
 %####################### theoretical prediction
 \subsection{Comparing results with theoretical distribution}
 \label{sec:theoretical}
+From the Table \ref{table:dataset}, data number 10 and 11 were used to plot histogram, poisson distribution and gaussian distribution.
+
+\begin{equation}
+\label{eq:poisson}
+P(x;\mu) = \frac{\mu^x}{x!}\exp(-\mu),
+\end{equation}
+where $\mu$ is the mean and $x = 1, 2, 3 ...$. This equation describes the poisson distribution. It has discrete value \citep{Stat}. 
+
+\begin{equation}
+\label{eq:gaussian}
+P(x;\mu;\sigma) = \frac{1}{\sigma \sqrt{2\pi}}\exp \left[-\frac{1}{2} \left(\frac{x - \mu}{\sigma} \right)^2 \right],
+\end{equation}
+where $\mu$ is the mean and $\sigma$ is the standard deviation. This is equation for gaussian distribution and it is continuos distribution \citep{Stat}.
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \begin{figure}[H]
 \centering
 \includegraphics[angle=0,height=9cm,width=15.5cm]{graphs/Hist_distribution_small.pdf}
 \caption{Histogram of data number 10 from Table \ref{table:dataset} with 1000 samples and time interval as 0.001. Here blues line is gaussian distribution, green is poisson distribution and red line indicated the mean value}
-\label{fig:dark_plot}
+\label{fig:poisson}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[angle=0,height=9cm,width=15.5cm]{graphs/Hist_distribution_big.pdf}
 \caption{Histogram of data number 11 from Table \ref{table:dataset}with 1000 samples and time interval as 0.1. Here blues line is gaussian distribution, green is poisson distribution and red line indicated the mean value}
-\label{fig:dark_hist}
+\label{fig:gaussian}
 \end{figure}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The two figures (Figure 7 and 8) two data with 1000 number of samples but different time interval: 0.001s and 0.01s, respectively. There is histogram of the data in black and mean in red on each plot. Poisson and Gaussian distribution on the plots are multiplied by 1000 to obtain correct scaling for comparing with histogram. One of the main thing to notice in these two graph is that for smaller time interval gaussian distribution (by Equation 4) does not right the histogram, however it does for the larger time interval. Poisson distribution (by Equation 3) fits both the histograms. This further proves that data collected correlates with poisson distribution. Gaussian is good approximate, if the time interval of data is large, as in Figure 8.  
 
 %#######################  MOM and SDOM
 \subsection{Exploring mean of mean and standard deviation of mean}
@@ -281,7 +296,7 @@ What does this represent/show.
 
 Data number 12 - 22 from Table \ref{table:dataset} was used to calculate the mean of mean (MOM) using Equation \ref{eq:mean} twice and standard deviation of mean (SDOM) using Equation \ref{eq:mean} and  \ref{eq:SD}. This was then plotted in count vs. number of samples plot. 
 
-The Figure \ref{fig:task9} also have a theoretical graph, which was derived by the following method. For poisson distribution variance (standard deviation squared) is same as mean value ($\mu$) of the data \citep{Stat}. Therefore, the standard deviation of poisson distribution is $\sigma = \sqrt{\mu}$. And for expected error of mean, the formula is $\frac{\sigma}{\sqrt{N}} $ \citep{error}. Combining these two we get:
+The Figure \ref{fig:task9} also have a theoretical graph, which was derived by the following method. For poisson distribution variance (standard deviation squared) is same as mean value ($\mu$) of the data as explained in Section \ref{sec:meanandvariance}. Therefore, the standard deviation of poisson distribution is $\sigma = \sqrt{\mu}$. And for expected error of mean, the formula is $\frac{\sigma}{\sqrt{N}} $ \citep{error}. Combining these two we get:
 
 \begin{equation}
 \label{eq:TSD}
@@ -303,8 +318,8 @@ It can be induced from Figure \ref{fig:task9} that as the number of samples incr
 
 %######################### Conclusion
 \section{Conclusion}
-``I always thought something was fundamentally wrong with the universe'' \citep{adams1995hitchhiker}
+Photons detected using PMT based on different number of samples and time intervals show high correlation with poisson distribution. Mean value is equal to the variance for all data set. However, at larger time interval, the data set is also approximated to gaussian distribution, but not completely. It also shown that at larger number of samples the MOM approaches a certain value and SDOM approaches zero. This also fits with theoretical standard deviation calculated by using poisson statistics and error propagation. 
 
 \bibliographystyle{plain}
-\bibliography{references}
+\bibliography{references.bib}
 \end{document}
