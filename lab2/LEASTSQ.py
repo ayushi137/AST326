@@ -14,13 +14,21 @@ md = np.dot(mai,mc)
 mfit = md[0,0]
 cfit = md[1,0]
 
+variance = (1.0/(len(Pixels)-2))*np.sum(Wavelengths-Pixels*mfit-cfit)**2.0
+residual = Wavelengths - mfit*Pixels+cfit
+
+print mfit,cfit,variance
+
+
+plt.figure(1)
 plt.plot(Pixels,Wavelengths,'o',label="data")
 plt.plot(Pixels,mfit*Pixels+cfit)
 plt.xlabel("Pixel Number")
 plt.ylabel("Wavelength (Angstroms)")
 plt.title("Line of Best Fit")
+
+plt.figure(2)
+plt.plot (Pixels, residual)
+
+
 plt.show()
-
-sigmasquared = (1.0/(len(Pixels)-2))*np.sum(Wavelengths-Pixels*mfit-cfit)**2.0
-
-print mfit,cfit,sigmasquared

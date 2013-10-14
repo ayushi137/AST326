@@ -6,12 +6,11 @@ from matplotlib import pyplot as plt
 calibrationlist = ["NEON"]
 triallist = [1,2,3,4,5,6]
 
-centroidpixellist = []
-centroidintensitylist = []
+
 
 for calibration in calibrationlist:
     for number in triallist:
-        file = open("/h/ungrad1/berard/Lab2/100ms"+calibration+str(number)+".txt")
+        file = open("100ms"+calibration+str(number)+".txt")
         all_lines = file.readlines()
         Pixellist = []
         Intensitylist = []
@@ -20,6 +19,8 @@ for calibration in calibrationlist:
             Intensity = float(all_lines[j].split()[1])
             Pixellist.append(Pixel)
             Intensitylist.append(Intensity)
+        centroidpixellist = []
+        centroidintensitylist = []
         for i in range(len(Intensitylist)-2):
             if Intensitylist[i+1]>Intensitylist[i]:
                 i += 1
@@ -33,8 +34,10 @@ for calibration in calibrationlist:
         print "Centroids found at...", centroidpixellist
         Datasetx = np.array(Pixellist)
         Datasety = np.array(Intensitylist)
+        #plt.figure(w)
         plt.plot(Datasetx,Datasety)
         plt.plot(centroidpixellist,centroidintensitylist,'o')
+        #w+=1
         plt.show()
         
         

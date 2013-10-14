@@ -1,0 +1,11 @@
+import numpy as np
+from matplotlib import pyplot as plt
+
+#first find centroids
+
+sourcelist = ["NEON"]
+
+for source in sourcelist:
+    data=[]
+    trial = np.arange[1,7,1]
+    for n in 
