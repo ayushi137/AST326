@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 pixellist = []
 intensitylist = []
-trial = np.arange(1,101,1) ### change in other file
+trial = np.arange(1,1001,1) ### change in other file
 
 for n in trial:
     k = ""
