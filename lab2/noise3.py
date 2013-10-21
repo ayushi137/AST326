@@ -2,6 +2,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy.optimize import leastsq
 
 ######################### loading files ######################################
 
@@ -20,9 +21,9 @@ for n in trial:
     else:
         k = "0"
     
-    pixel = np.loadtxt("100_lamp_data/100ms_Lamp_{0}{1}.txt".format(k,n),usecols=(0,), skiprows = 16, comments = ">")
+    pixel = np.loadtxt("1000_Lamp/100ms_Lamp_{0}{1}.txt".format(k,n),usecols=(0,)) #, skiprows = 16, comments = ">")
     pixellist.append(pixel)
-    intensity = np.loadtxt("100_lamp_data/100ms_Lamp_{0}{1}.txt".format(k,n),usecols=(1,), skiprows = 16, comments = ">")
+    intensity = np.loadtxt("1000_Lamp/100ms_Lamp_{0}{1}.txt".format(k,n),usecols=(1,)) #, skiprows = 16, comments = ">")
     intensitylist.append(intensity)
 
 ######################### Functions ###########################################
@@ -45,14 +46,14 @@ def mean_SD (data):
 ######################### specific pixel ######################################
 sample = trial
 # as the list change change in other file as well
-pick = np.arange(300,2000,1)
+pick = np.arange(500,900,10)
 n = len(pick)
-inten = np.zeros([n,100])
+inten = np.zeros([n,1000])
 M_V = []
 j = 0
 while j<n:
     i=0
-    while i< 100:
+    while i< 1000:
         inten[j][i] = intensitylist[i][pick[j]]
         i+=1
     mean = mean_SD(inten[j])
@@ -68,10 +69,37 @@ while m<n:
     variance.append(M_V[m][1])
     m+=1
 
+mean = np.array(mean)
+variance = np.array(variance)
+############################## fit ###########################################
+p0 = [-3380,1.44]
+def peval(mean, p):
+    return (p[0]+p[1]*mean)
+
+def residuals (p,variance, mean, peval):
+    return (variance) - peval(mean,p)
+
+p_final = leastsq(residuals,p0,args=(variance,mean, peval), full_output= True,maxfev=2000)
+
+
+if p_final[4] == 1: # change p_final[1] to success
+    print "It converges."
+else:
+    print "It does not converge."
+
+output = np.column_stack((mean,variance))
+#np.savetxt("meanVariance.csv", output, delimiter=',', fmt='%.2f')
+
+############################### plot ########################################
 plt.figure(1)
 plt.scatter(mean, variance)
-plt.title("Pixel from 300 to 2000")
+plt.plot(mean, peval(mean, p_final[0]),color='r')
+
+plt.text(8000, 60000, 'k = 1.44')
+
+plt.text(8000, 57000, 's_o^2 = -3380')
+plt.title("Pixel from 500 to 900")
 plt.xlabel("mean")
 plt.ylabel("variance")
-#plt.savefig("mean_Variance2.pdf")
+plt.savefig("mean_Variance3_reduced.pdf")
 plt.show()

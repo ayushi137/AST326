@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 pixellist = []
 intensitylist = []
-trial = np.arange(1,101,1) ### change in other file
+trial = np.arange(1,1001,1) ### change in other file
 
 for n in trial:
     k = ""
@@ -20,9 +20,9 @@ for n in trial:
     else:
         k = "0"
     
-    pixel = np.loadtxt("1000_lamp_data/50ms_Lamp_{0}{1}.txt".format(k,n),usecols=(0,), skiprows = 16, comments = ">")
+    pixel = np.loadtxt("1000_Lamp/100ms_Lamp_{0}{1}.txt".format(k,n),usecols=(0,)) #, skiprows = 16, comments = ">")
     pixellist.append(pixel)
-    intensity = np.loadtxt("1000_lamp_data/50ms_Lamp_{0}{1}.txt".format(k,n),usecols=(1,), skiprows = 16, comments = ">")
+    intensity = np.loadtxt("1000_Lamp/100ms_Lamp_{0}{1}.txt".format(k,n),usecols=(1,))#, skiprows = 16, comments = ">")
     intensitylist.append(intensity)
 
 
@@ -31,18 +31,18 @@ sample = trial
 i = 0
 # as the list change change in other file as well
 pick = [500, 750,900, 1000,1100,1250,1400,1500,1600, 1750, 1800]
-inten = np.zeros([len(pick),100])
+inten = np.zeros([len(pick),1000])
 j = 0
 while j<len(pick):
     i=0
-    while i< 100:
+    while i< 1000:
         inten[j][i] = intensitylist[i][pick[j]]
         i+=1
     j+=1
 
 output = np.transpose(inten)
 
-#np.savetxt("1000intensity_{}pixel.txt".format(len(pick)),output,fmt='%0.2f')
+np.savetxt("1000intensity_{}pixel.txt".format(len(pick)),output,fmt='%0.2f')
 
 plt.figure(1, figsize=(8,9))
 plt.subplot(5,1,1)
@@ -62,7 +62,7 @@ plt.plot(sample, inten[4], label = "pixel = {0}".format(pick[4]))
 plt.xlabel("sample")
 plt.legend(prop={'size':10})
 plt.tight_layout()
-plt.savefig("Noise3-1.pdf")
+#plt.savefig("Noise3-1.pdf")
 
 plt.figure(2, figsize=(8,9))
 plt.subplot(6,1,1)
@@ -85,5 +85,11 @@ plt.plot(sample, inten[10], label = "pixel = {0}".format(pick[10]))
 plt.xlabel("sample")
 plt.legend(prop={'size':10})
 plt.tight_layout()
-plt.savefig("Noise3-2.pdf")
+#plt.savefig("Noise3-2.pdf")
+
+plt.figure(3)
+plt.plot(pixellist[76], intensitylist[76])
+plt.xlim(500,900)
+plt.savefig("plot3_1.pdf")
+
 plt.show()

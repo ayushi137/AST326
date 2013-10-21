@@ -39,9 +39,11 @@ while i <n:
 mean = []
 variance = []
 i = 0
+print "Mean \t Variance"
 while i <n:
     mean.append(M_V[i][0])
     variance.append(M_V[i][1])
+    print mean, "\t", variance
     i+=1
 
 plt.figure(1)
@@ -49,5 +51,5 @@ plt.scatter(mean, variance)
 plt.title("For selected Pixels")
 plt.xlabel("mean")
 plt.ylabel("variance")
-plt.savefig("mean_V1.pdf")
+plt.savefig("mean_V3.pdf")
 plt.show()
