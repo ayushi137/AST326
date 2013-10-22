@@ -21,9 +21,9 @@ for n in trial:
     else:
         k = "0"
     
-    pixel = np.loadtxt("1000_Lamp/100ms_Lamp_{0}{1}.txt".format(k,n),usecols=(0,)) #, skiprows = 16, comments = ">")
+    pixel = np.loadtxt("1000_Lamp/100ms_Lamp_{0}{1}.txt".format(k,n),usecols=(0,))
     pixellist.append(pixel)
-    intensity = np.loadtxt("1000_Lamp/100ms_Lamp_{0}{1}.txt".format(k,n),usecols=(1,)) #, skiprows = 16, comments = ">")
+    intensity = np.loadtxt("1000_Lamp/100ms_Lamp_{0}{1}.txt".format(k,n),usecols=(1,))
     intensitylist.append(intensity)
 
 ######################### Functions ###########################################
