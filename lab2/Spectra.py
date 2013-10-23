@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 
 
-sourcelist = ["Vega", "Erif", "albero_"]
+sourcelist = ["Vega", "Erif", "Albero"]
 a = [3,2,2]
 m=1
 for source in sourcelist:
@@ -13,7 +13,7 @@ for source in sourcelist:
     intensitylist = []
     trial = np.arange(1,a[m-1]+1,1)
     plt.figure(m)
-
+    plt.suptitle("Data for {0}".format(source))
     for n in trial:
         pixel = np.loadtxt("Night1/{0}0{1}.csv".format(source,n),delimiter=',',usecols=(0,))
         pixellist.append(pixel)
