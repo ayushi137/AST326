@@ -46,7 +46,7 @@ def mean_SD (data):
 ######################### specific pixel ######################################
 sample = trial
 # as the list change change in other file as well
-pick = np.arange(500,900,10)
+pick = np.arange(500,900,1)
 n = len(pick)
 inten = np.zeros([n,1000])
 M_V = []
@@ -101,5 +101,5 @@ plt.text(8000, 57000, 's_o^2 = -3380')
 plt.title("Pixel from 500 to 900")
 plt.xlabel("mean")
 plt.ylabel("variance")
-plt.savefig("mean_Variance3_reduced.pdf")
+#plt.savefig("mean_Variance3_reduced.pdf")
 plt.show()
