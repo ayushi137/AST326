@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 
 ######################### loading files ######################################
 
+
 pixellist = []
 intensitylist = []
 trial = np.arange(1,1001,1) ### change in other file
@@ -62,7 +63,7 @@ plt.plot(sample, inten[4], label = "pixel = {0}".format(pick[4]))
 plt.xlabel("sample")
 plt.legend(prop={'size':10})
 plt.tight_layout()
-#plt.savefig("Noise3-1.pdf")
+plt.savefig("Noise.pdf")
 
 plt.figure(2, figsize=(8,9))
 plt.subplot(6,1,1)
@@ -85,11 +86,11 @@ plt.plot(sample, inten[10], label = "pixel = {0}".format(pick[10]))
 plt.xlabel("sample")
 plt.legend(prop={'size':10})
 plt.tight_layout()
-#plt.savefig("Noise3-2.pdf")
+plt.savefig("Noise.pdf")
 
 plt.figure(3)
 plt.plot(pixellist[76], intensitylist[76])
 plt.xlim(500,900)
-plt.savefig("plot3_1.pdf")
+#plt.savefig("plot3_1.pdf")
 
 plt.show()
