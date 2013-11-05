@@ -45,7 +45,7 @@ for source in sourcelist:
     for i in range(len(pix)):
         pixel.append(np.average(pix[i]))
         dark.append(np.average(d[i]))
-        intensity.append((np.average(inte[i]) - np.average(d[i]))/1.37)
+        intensity.append((np.average(inte[i])))# - np.average(d[i]))/1.37)
 
     Pixels.append(pixel)
     Intensity.append(intensity)

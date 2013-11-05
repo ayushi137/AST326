@@ -133,22 +133,24 @@ plt.tight_layout()
 
 '''
 
-plt.figure(figsize = (10,6))
+plt.figure(figsize = (10,4))
 #plt.plot(pixellist[0], intensitylist[0], color='r', label = "15s")
 #plt.plot(pixellist[1], intensitylist[1], color='b', label = "30s")
 #plt.plot(centroidpixel,centroidintensity, 'or' )
-plt.plot(pixellist[0], intensitylist[0], color='g', label = "60s")
+plt.plot(pixellist[2], intensitylist[2], color='g', label = "60s")
 #plt.plot ((pixel), halogen/Blackbody)
 #plt.plot (pixel, Blackbody2)
-plt.title("Vega at 60s")
+plt.title("Vega at Different Exposure Time")
 plt.ylabel("Intensity")
 #plt.legend(loc =2 )
 plt.xlabel("Wavelength")
-plt.text(4100, 0.46*(10**(-10)), 'H-delta')
+
+plt.text(4000, 5.33*(10**(-10)), 'H-delta')
 plt.text(4340 , 0.78*(10**(-10)), 'H-gemma')
-plt.text(4800 , 2.2*(10**(-10)), 'H-Beta')
-plt.text(6550 , 4.7*(10**(-10)), 'H-alpha')
-plt.text(6907 , 6.0*(10**(-10)) , 'O2')
+plt.text(4800 , 6.6*(10**(-10)), 'H-Beta')
+plt.text(6550 , 2.0*(10**(-9)), 'H-alpha')
+plt.text(6907 , 2.6*(10**(-9)) , 'O2')
+
 plt.tight_layout()
 
 

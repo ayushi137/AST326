@@ -19,6 +19,7 @@ head_line = pf.getheader(data)
 lin = line[0].data
 dark = darl[0].data
 intensity = lin[300]
+#np.savetxt("Lamp1.txt", intensity, fmt='%.2f')
 dark_intensity = dark[300]
 pixel = np.arange(0, len(intensity),1)
 fixed_intensity = intensity #- dark_intensity
@@ -55,7 +56,7 @@ plt.title ("Neon from Night1")
 plt.xlabel ("Pixels")
 plt.ylabel ("Intensity")
 
-np.savetxt("Telescope_Neon.txt", output, fmt='%.2f')
+#np.savetxt("Telescope_Neon.txt", output, fmt='%.2f')
 
 plt.figure(2)
 plt.plot(pixel, dark_intensity)

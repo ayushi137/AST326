@@ -1,38 +1,81 @@
 \relax 
+\citation{instructions}
+\citation{telescope}
 \newlabel{abstract}{{}{1}}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
 \newlabel{sec:introduction}{{1}{1}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Equipment}{1}}
 \newlabel{sec:equipment}{{2}{1}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Data Summary}{1}}
-\newlabel{sec:data}{{3}{1}}
-\citation{error}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Data Summary}{2}}
+\newlabel{sec:data}{{3}{2}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Data from the CCD in the lab\relax }}{2}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{table:ccd}{{1}{2}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Data from the campus Telescope\relax }}{2}}
-\newlabel{table:telescope}{{2}{2}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Data Reduction and Method}{2}}
-\newlabel{sec:reduction}{{4}{2}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Calculation and Modeling}{2}}
-\newlabel{sec:calc}{{5}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Noise and Gain in CCD data}{2}}
-\newlabel{sec:noise_ccd}{{5.1}{2}}
-\newlabel{eq:mean}{{1}{2}}
+\citation{scipy}
 \citation{error}
-\citation{instructions}
+\citation{error}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Data from the campus Telescope\relax }}{3}}
+\newlabel{table:telescope}{{2}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Data Reduction and Method}{3}}
+\newlabel{sec:reduction}{{4}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Noise and Gain in CCD data}{3}}
+\newlabel{sec:noise_ccd}{{4.1}{3}}
+\newlabel{eq:mean}{{1}{3}}
 \newlabel{eq:variance}{{2}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Pixel calibration in Telescope Data}{3}}
-\newlabel{sec:noise_tele}{{5.2}{3}}
-\newlabel{gain}{{3}{3}}
-\newlabel{blackb}{{4}{3}}
-\newlabel{planck}{{5}{3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Time vs. count per sample graph for data number 1 from Table 2\hbox {}. There are six sets of data, where time interval of each sample is 0.001s for 100 samples.\relax }}{4}}
-\newlabel{fig:task1_plots}{{1}{4}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{4}}
-\newlabel{sec:discuss}{{6}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}CCD}{4}}
-\newlabel{sec:ccd}{{6.1}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Telescope}{4}}
-\newlabel{sec:telescope}{{6.2}{4}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{4}}
+\citation{instructions}
+\citation{instructions}
+\citation{Neon}
+\newlabel{eq:gain}{{3}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Calibration in Telescope Data}{4}}
+\newlabel{sec:noise_tele}{{4.2}{4}}
+\newlabel{eq:blackbody}{{4}{4}}
+\newlabel{eq:planck}{{5}{4}}
+\newlabel{eq:wein}{{6}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Calculation and Modeling}{4}}
+\newlabel{sec:calc}{{5}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Pixel to Wavelength Relation}{4}}
+\newlabel{sec:p-w}{{5.1}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Averaged spectrum of 1000 Neon sample, from Table 1\hbox {}, taken using CCD with the peaks denoted by the red dot.\relax }}{5}}
+\newlabel{fig:Neon_averaged}{{1}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Pixel vs. Wavelength plot on the top, with Linear and Quadratic residual for CCD Spectroscope using the Neon data. $a_0$, $a_1$ and $a_2$ values are the constant for the pixel to wavelength equation.\relax }}{5}}
+\newlabel{fig:Neon_CCD}{{2}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Pixel vs. Wavelength plot with Linear for Telescope Spectroscope using the Neon data from Table 3\hbox {}. $a_0$ and $a_1$ values are the constant for the pixel to wavelength equation.\relax }}{6}}
+\newlabel{fig:Neon_tele}{{3}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Gain, Noise and Saturation}{6}}
+\newlabel{sec:gns}{{5.2}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Plot of intensity at certain pixel in 1000 sample of Table Lamp data at 100ms, see Table 1\hbox {}. Left: from data with many errors. Right: from good data.\relax }}{6}}
+\newlabel{fig:Lamp_CCD}{{4}{6}}
+\citation{instructions}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Averaged spectrum of vaious Lamp data at different exposure time, see Table 1\hbox {} for all list of Lamp Data.\relax }}{7}}
+\newlabel{fig:Saturation}{{5}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Left: plot of mean vs. variance, using equation 3\hbox {}, for pixels 0-850. Right: plot of mean vs. variance for pixels 0-250 used to indentify read noise.\relax }}{7}}
+\newlabel{fig:noise_gain}{{6}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Blackbody Calibration}{8}}
+\newlabel{sec:bc}{{5.3}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Halogen blackbody at temperature 3200K. It was plotted using equation 5\hbox {}.\relax }}{8}}
+\newlabel{fig:bb}{{7}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Spectrum of Vega, Enif and two Albero before calibration.\relax }}{8}}
+\newlabel{fig:starwithout}{{8}{8}}
+\citation{theo}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Spectrum of Vega, Enif and two Albero after calibration.\relax }}{9}}
+\newlabel{fig:star}{{9}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Approximate Surface Temperature of the Stars in Kelvin.\relax }}{9}}
+\newlabel{table:blackbody}{{3}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{9}}
+\newlabel{sec:discuss}{{6}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}CCD}{9}}
+\newlabel{sec:ccd}{{6.1}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Spectrum of Flourescent Bulb with indicated emmision lines.\relax }}{9}}
+\newlabel{fig:bulb}{{10}{9}}
+\citation{theo}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Spectrum of Sun with indicated absorbtion lines.\relax }}{10}}
+\newlabel{fig:sun}{{11}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Telescope}{10}}
+\newlabel{sec:telescope}{{6.2}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Spectrum of Vega with indicated absorbtion lines in Hydrogen Balmer series.\relax }}{10}}
+\newlabel{fig:vega}{{12}{10}}
+\citation{instructions}
+\bibstyle{plain}
+\bibdata{references.bib}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Spectrum of Vega at three different exposure time: 15s, 30s, and 60s\relax }}{11}}
+\newlabel{fig:vegaall}{{13}{11}}
