@@ -1,4 +1,4 @@
-# this program is used to get centroids 
+# this program is used to get centroids
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -26,7 +26,7 @@ intensity = line/flat
 intensity = intensity[::-1]
 ################################# centroids ##################################
 background = 15000
-
+'''
 x= []
 y = []
 #for i in range(1,2047):
@@ -50,7 +50,7 @@ np.savetxt ("centroids.txt", output, fmt='%.1i')
 '''
 x = np.loadtxt("centroids.txt", usecols =(0,))
 y = np.loadtxt("centroids.txt", usecols = (1,))
-'''
+
 # Note for intensity the x and y values are flipped
 centrox = np.array([])
 centroy = np.array([])
