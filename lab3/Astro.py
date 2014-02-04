@@ -3,22 +3,23 @@ import matplotlib.pyplot as plt
 import pyfits as pf
 import matplotlib.cm as cm
 
-folder = [19,20,22,23]#,28]
+folder = [19,20,22,23,28]
 ra = []
 dec = []
 X = []
 Y = []
 astra = []
 astdec=[]
-Pixelx = [1086,1089,1063,1087]
-Pixely = [992,1007,1039,1008]
+Pixelx = [1086,1089,1063,1087,1071.1359772607466]
+Pixely = [992,1007,1039,1008,1024.442188922701]
 m=0
 for z in folder:
+    print z
     x = np.loadtxt("{0}centroids.txt".format(z), usecols =(0,))
     y = np.loadtxt("{0}centroids.txt".format(z), usecols = (1,))
     intensity = np.loadtxt("{0}intensity.txt".format(z))
 
-    background = 5000
+    background = 8000
     # Note for intensity the x and y values are flipped
     centrox = np.array([])
     centroy = np.array([])
@@ -56,7 +57,8 @@ for z in folder:
     output = np.column_stack((centrox, centroy))
     X.append(centrox)
     Y.append(centroy)
-    #np.savetxt ("{0}centroid_points.txt".format(z), output, fmt='%.1i')
+    np.savetxt ("{0}centroid_points.txt".format(z), output, fmt='%.1i')
+
 
     ################### ccd to radians ###############################
     T = np.loadtxt("plateConstants.txt")
@@ -110,7 +112,7 @@ for z in folder:
     astdec.append(DECA)
     m+=1
     
-    '''
+    
     ################################# plotting ###################################
     plt.figure()
     plt.imshow(intensity, origin = 'lower', vmin = 0, vmax= 20000, cmap = cm.gray_r, interpolation ='nearest')
@@ -126,7 +128,7 @@ for z in folder:
         plt.gca().add_artist(circ)
         i+=1
 
-        '''
+
 
 colorindex = ['k.','g.', 'b.', 'r.', 'm.']
 plt.figure()

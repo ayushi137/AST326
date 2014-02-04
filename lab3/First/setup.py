@@ -239,7 +239,6 @@ XX = np.array(ccdX[0])[0]
 YY = np.array(ccdX[1])[0]
 
 RA = np.arctan(-XX/(np.cos(do)-(YY*np.sin(do)))) + ao
-
 part1 =(np.sin(do)+(YY*np.cos(do)))
 part2 =((1+XX**2+YY**2)**(1/2))
 DEC = np.arcsin(part1/part2)
@@ -327,7 +326,7 @@ plt.title('Pixel offset between Centroids and Catalog')
 plt.xlabel('x or y[pixel]')
 plt.ylabel('pixel offset')
 plt.legend(loc = 2)
-
+'''
 #~~~~~~~~~~~~~~~~~
 
 test1 = np.array(x_bar[0])
@@ -374,7 +373,7 @@ plt.legend(loc = 2)
 plt.figure()
 plt.plot(RA, DEC, 'r+')
 plt.plot(RAcat, DECcat, 'b.')
-'''
+
 
 q = np.matrix(detectedx)
 r = np.matrix(detectedy)

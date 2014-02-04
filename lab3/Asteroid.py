@@ -37,7 +37,7 @@ for z in folder:
     Flat.append(flat)
     Dark.append(dark)
     
-    background = 5000
+    background = 8000
 
     x= []
     y = []
