@@ -1,4 +1,4 @@
-import numpy as np
+limport numpy as np
 import matplotlib.pyplot as plt
 import pyfits as pf
 import string as str

@@ -1,0 +1,459 @@
+#filename     target name     obstype  filter  Exposure time
+r1598072.fit  Flat field        FLAT      g2     2.0
+r1598073.fit  Flat field        FLAT      g2     5.0
+r1598074.fit  Flat field        FLAT      g2     6.0
+r1598075.fit  Flat field        FLAT      g2     7.0
+r1598076.fit  Flat field        FLAT      g2     8.0
+r1598077.fit  Flat field        FLAT      g2     9.0
+r1598078.fit  Flat field        FLAT      g2    10.0
+r1598079.fit  Flat field        FLAT      g2    11.0
+r1598080.fit  Flat field        FLAT      g2    12.0
+r1598081.fit  Flat field        FLAT      g2    14.0
+r1598082.fit  Flat field        FLAT      g2    15.0
+r1598083.fit  Flat field        FLAT      g2    17.0
+r1598084.fit  Flat field        FLAT      g2    20.0
+r1598085.fit  Flat field        FLAT      g2    22.0
+r1598086.fit  Flat field        FLAT      g2    25.0
+r1598087.fit  Flat field        FLAT      g2    28.0
+r1598088.fit  Flat field        FLAT      g2    30.0
+r1598089.fit  Flat field        FLAT      g2    32.0
+r1599966.fit  Flat field        FLAT      g2    30.0
+r1599967.fit  Flat field        FLAT      g2    28.0
+r1599968.fit  Flat field        FLAT      g2    26.0
+r1599969.fit  Flat field        FLAT      g2    24.0
+r1599970.fit  Flat field        FLAT      g2    20.0
+r1599971.fit  Flat field        FLAT      g2    18.0
+r1599972.fit  Flat field        FLAT      g2    15.0
+r1599973.fit  Flat field        FLAT      g2    10.0
+r1599974.fit  Flat field        FLAT      g2     9.0
+r1599975.fit  Flat field        FLAT      g2     7.0
+r1599976.fit  Flat field        FLAT      g2     6.0
+r1599977.fit  Flat field        FLAT      g2     4.0
+r1599978.fit  Flat field        FLAT      g2     3.0
+r1599979.fit  Flat field        FLAT      g2     2.0
+r1599980.fit  Flat field        FLAT      g2     2.0
+r1599981.fit  Flat field        FLAT      g2     2.0
+r1599982.fit  Flat field        FLAT      g2     2.0
+r1599983.fit  Flat field        FLAT      g2     2.0
+r1599984.fit  Flat field        FLAT      g2     4.0
+r1599985.fit  Flat field        FLAT      g2     3.0
+r1599986.fit  Flat field        FLAT      g2     2.0
+r1599987.fit  Flat field        FLAT      g2     2.0
+r1599988.fit  Flat field        FLAT      g2     2.0
+r1599989.fit  Flat field        FLAT      g2     2.0
+r1599990.fit  Flat field        FLAT      g2     2.0
+r1599991.fit  Flat field        FLAT      g2     2.0
+r1599992.fit  Flat field        FLAT      g2     2.0
+r1599993.fit  Flat field        FLAT      g2     2.0
+r1599994.fit  Flat field        FLAT      g2     2.0
+r1597643.fit  Bias              BIAS      V4     0.0
+r1597644.fit  Bias              BIAS      V4     0.0
+r1597645.fit  Bias              BIAS      V4     0.0
+r1597646.fit  Bias              BIAS      V4     0.0
+r1597647.fit  Bias              BIAS      V4     0.0
+r1597648.fit  Bias              BIAS      V4     0.0
+r1597649.fit  Bias              BIAS      V4     0.0
+r1597650.fit  Bias              BIAS      V4     0.0
+r1597651.fit  Bias              BIAS      V4     0.0
+r1597652.fit  Bias              BIAS      V4     0.0
+r1597653.fit  Bias              BIAS      V4     0.0
+r1597654.fit  Bias              BIAS      V4     0.0
+r1597655.fit  Bias              BIAS      V4     0.0
+r1597656.fit  Bias              BIAS      V4     0.0
+r1597657.fit  Bias              BIAS      V4     0.0
+r1597658.fit  Bias              BIAS      V4     0.0
+r1597659.fit  Bias              BIAS      V4     0.0
+r1597660.fit  Bias              BIAS      V4     0.0
+r1597661.fit  Bias              BIAS      V4     0.0
+r1597662.fit  Bias              BIAS      V4     0.0
+r1597663.fit  Bias              BIAS      V4     0.0
+r1599995.fit  Bias              BIAS      V4     0.0
+r1599996.fit  Bias              BIAS      V4     0.0
+r1599997.fit  Bias              BIAS      V4     0.0
+r1599998.fit  Bias              BIAS      V4     0.0
+r1599999.fit  Bias              BIAS      V4     0.0
+r1600000.fit  Bias              BIAS      V4     0.0
+r1600001.fit  Bias              BIAS      V4     0.0
+r1600002.fit  Bias              BIAS      V4     0.0
+r1600003.fit  Bias              BIAS      V4     0.0
+r1600004.fit  Bias              BIAS      V4     0.0
+r1600005.fit  Bias              BIAS      V4     0.0
+r1600006.fit  Bias              BIAS      V4     0.0
+r1600007.fit  Bias              BIAS      V4     0.0
+r1600008.fit  Bias              BIAS      V4     0.0
+r1600009.fit  Bias              BIAS      V4     0.0
+r1600010.fit  Bias              BIAS      V4     0.0
+r1600011.fit  Bias              BIAS      V4     0.0
+r1600012.fit  Bias              BIAS      V4     0.0
+r1600013.fit  Bias              BIAS      V4     0.0
+r1600014.fit  Bias              BIAS      V4     0.0
+r1600015.fit  Bias              BIAS      V4     0.0
+r1600016.fit  Bias              BIAS      V4     0.0
+r1600017.fit  Bias              BIAS      V4     0.0
+r1600018.fit  Bias              BIAS      V4     0.0
+r1600019.fit  Bias              BIAS      V4     0.0
+r1600020.fit  Bias              BIAS      V4     0.0
+r1599579.fit  GJ1214            TARGET    g2    30.0
+r1599580.fit  GJ1214            TARGET    g2    30.0
+r1599581.fit  GJ1214            TARGET    g2    30.0
+r1599582.fit  GJ1214            TARGET    g2    30.0
+r1599583.fit  GJ1214            TARGET    g2    30.0
+r1599584.fit  GJ1214            TARGET    g2    30.0
+r1599585.fit  GJ1214            TARGET    g2    30.0
+r1599586.fit  GJ1214            TARGET    g2    30.0
+r1599587.fit  GJ1214            TARGET    g2    30.0
+r1599588.fit  GJ1214            TARGET    g2    30.0
+r1599589.fit  GJ1214            TARGET    g2    30.0
+r1599590.fit  GJ1214            TARGET    g2    30.0
+r1599591.fit  GJ1214            TARGET    g2    30.0
+r1599592.fit  GJ1214            TARGET    g2    30.0
+r1599593.fit  GJ1214            TARGET    g2    30.0
+r1599594.fit  GJ1214            TARGET    g2    30.0
+r1599595.fit  GJ1214            TARGET    g2    30.0
+r1599596.fit  GJ1214            TARGET    g2    30.0
+r1599597.fit  GJ1214            TARGET    g2    30.0
+r1599598.fit  GJ1214            TARGET    g2    30.0
+r1599599.fit  GJ1214            TARGET    g2    30.0
+r1599600.fit  GJ1214            TARGET    g2    30.0
+r1599601.fit  GJ1214            TARGET    g2    30.0
+r1599602.fit  GJ1214            TARGET    g2    30.0
+r1599603.fit  GJ1214            TARGET    g2    30.0
+r1599604.fit  GJ1214            TARGET    g2    30.0
+r1599605.fit  GJ1214            TARGET    g2    30.0
+r1599606.fit  GJ1214            TARGET    g2    30.0
+r1599607.fit  GJ1214            TARGET    g2    30.0
+r1599608.fit  GJ1214            TARGET    g2    30.0
+r1599609.fit  GJ1214            TARGET    g2    30.0
+r1599610.fit  GJ1214            TARGET    g2    30.0
+r1599611.fit  GJ1214            TARGET    g2    30.0
+r1599612.fit  GJ1214            TARGET    g2    30.0
+r1599613.fit  GJ1214            TARGET    g2    30.0
+r1599614.fit  GJ1214            TARGET    g2    30.0
+r1599615.fit  GJ1214            TARGET    g2    30.0
+r1599616.fit  GJ1214            TARGET    g2    30.0
+r1599617.fit  GJ1214            TARGET    g2    30.0
+r1599618.fit  GJ1214            TARGET    g2    30.0
+r1599619.fit  GJ1214            TARGET    g2    30.0
+r1599620.fit  GJ1214            TARGET    g2    30.0
+r1599621.fit  GJ1214            TARGET    g2    30.0
+r1599622.fit  GJ1214            TARGET    g2    30.0
+r1599623.fit  GJ1214            TARGET    g2    30.0
+r1599624.fit  GJ1214            TARGET    g2    30.0
+r1599625.fit  GJ1214            TARGET    g2    30.0
+r1599626.fit  GJ1214            TARGET    g2    30.0
+r1599627.fit  GJ1214            TARGET    g2    30.0
+r1599628.fit  GJ1214            TARGET    g2    30.0
+r1599629.fit  GJ1214            TARGET    g2    30.0
+r1599630.fit  GJ1214            TARGET    g2    30.0
+r1599631.fit  GJ1214            TARGET    g2    30.0
+r1599632.fit  GJ1214            TARGET    g2    30.0
+r1599633.fit  GJ1214            TARGET    g2    30.0
+r1599634.fit  GJ1214            TARGET    g2    30.0
+r1599635.fit  GJ1214            TARGET    g2    30.0
+r1599636.fit  GJ1214            TARGET    g2    30.0
+r1599637.fit  GJ1214            TARGET    g2    30.0
+r1599638.fit  GJ1214            TARGET    g2    30.0
+r1599639.fit  GJ1214            TARGET    g2    30.0
+r1599640.fit  GJ1214            TARGET    g2    30.0
+r1599641.fit  GJ1214            TARGET    g2    30.0
+r1599642.fit  GJ1214            TARGET    g2    30.0
+r1599643.fit  GJ1214            TARGET    g2    30.0
+r1599644.fit  GJ1214            TARGET    g2    30.0
+r1599645.fit  GJ1214            TARGET    g2    30.0
+r1599646.fit  GJ1214            TARGET    g2    30.0
+r1599647.fit  GJ1214            TARGET    g2    30.0
+r1599648.fit  GJ1214            TARGET    g2    30.0
+r1599649.fit  GJ1214            TARGET    g2    30.0
+r1599650.fit  GJ1214            TARGET    g2    30.0
+r1599651.fit  GJ1214            TARGET    g2    30.0
+r1599652.fit  GJ1214            TARGET    g2    30.0
+r1599653.fit  GJ1214            TARGET    g2    30.0
+r1599654.fit  GJ1214            TARGET    g2    30.0
+r1599655.fit  GJ1214            TARGET    g2    30.0
+r1599656.fit  GJ1214            TARGET    g2    30.0
+r1599657.fit  GJ1214            TARGET    g2    30.0
+r1599658.fit  GJ1214            TARGET    g2    30.0
+r1599659.fit  GJ1214            TARGET    g2    30.0
+r1599660.fit  GJ1214            TARGET    g2    30.0
+r1599661.fit  GJ1214            TARGET    g2    30.0
+r1599662.fit  GJ1214            TARGET    g2    30.0
+r1599663.fit  GJ1214            TARGET    g2    30.0
+r1599664.fit  GJ1214            TARGET    g2    30.0
+r1599665.fit  GJ1214            TARGET    g2    30.0
+r1599666.fit  GJ1214            TARGET    g2    30.0
+r1599667.fit  GJ1214            TARGET    g2    30.0
+r1599668.fit  GJ1214            TARGET    g2    30.0
+r1599669.fit  GJ1214            TARGET    g2    30.0
+r1599670.fit  GJ1214            TARGET    g2    30.0
+r1599671.fit  GJ1214            TARGET    g2    30.0
+r1599672.fit  GJ1214            TARGET    g2    30.0
+r1599673.fit  GJ1214            TARGET    g2    30.0
+r1599674.fit  GJ1214            TARGET    g2    30.0
+r1599675.fit  GJ1214            TARGET    g2    30.0
+r1599676.fit  GJ1214            TARGET    g2    30.0
+r1599677.fit  GJ1214            TARGET    g2    30.0
+r1599678.fit  GJ1214            TARGET    g2    30.0
+r1599679.fit  GJ1214            TARGET    g2    30.0
+r1599680.fit  GJ1214            TARGET    g2    30.0
+r1599681.fit  GJ1214            TARGET    g2    30.0
+r1599682.fit  GJ1214            TARGET    g2    30.0
+r1599683.fit  GJ1214            TARGET    g2    30.0
+r1599684.fit  GJ1214            TARGET    g2    30.0
+r1599685.fit  GJ1214            TARGET    g2    30.0
+r1599686.fit  GJ1214            TARGET    g2    30.0
+r1599687.fit  GJ1214            TARGET    g2    30.0
+r1599688.fit  GJ1214            TARGET    g2    30.0
+r1599689.fit  GJ1214            TARGET    g2    30.0
+r1599690.fit  GJ1214            TARGET    g2    30.0
+r1599691.fit  GJ1214            TARGET    g2    30.0
+r1599692.fit  GJ1214            TARGET    g2    30.0
+r1599693.fit  GJ1214            TARGET    g2    30.0
+r1599694.fit  GJ1214            TARGET    g2    30.0
+r1599695.fit  GJ1214            TARGET    g2    30.0
+r1599696.fit  GJ1214            TARGET    g2    30.0
+r1599697.fit  GJ1214            TARGET    g2    30.0
+r1599698.fit  GJ1214            TARGET    g2    30.0
+r1599699.fit  GJ1214            TARGET    g2    30.0
+r1599700.fit  GJ1214            TARGET    g2    30.0
+r1599701.fit  GJ1214            TARGET    g2    30.0
+r1599702.fit  GJ1214            TARGET    g2    30.0
+r1599703.fit  GJ1214            TARGET    g2    30.0
+r1599704.fit  GJ1214            TARGET    g2    30.0
+r1599705.fit  GJ1214            TARGET    g2    30.0
+r1599706.fit  GJ1214            TARGET    g2    30.0
+r1599707.fit  GJ1214            TARGET    g2    30.0
+r1599708.fit  GJ1214            TARGET    g2    30.0
+r1599709.fit  GJ1214            TARGET    g2    30.0
+r1599710.fit  GJ1214            TARGET    g2    30.0
+r1599711.fit  GJ1214            TARGET    g2    30.0
+r1599712.fit  GJ1214            TARGET    g2    30.0
+r1599713.fit  GJ1214            TARGET    g2    30.0
+r1599714.fit  GJ1214            TARGET    g2    30.0
+r1599715.fit  GJ1214            TARGET    g2    30.0
+r1599716.fit  GJ1214            TARGET    g2    30.0
+r1599717.fit  GJ1214            TARGET    g2    30.0
+r1599718.fit  GJ1214            TARGET    g2    30.0
+r1599719.fit  GJ1214            TARGET    g2    30.0
+r1599720.fit  GJ1214            TARGET    g2    30.0
+r1599721.fit  GJ1214            TARGET    g2    30.0
+r1599722.fit  GJ1214            TARGET    g2    30.0
+r1599723.fit  GJ1214            TARGET    g2    30.0
+r1599724.fit  GJ1214            TARGET    g2    30.0
+r1599725.fit  GJ1214            TARGET    g2    30.0
+r1599726.fit  GJ1214            TARGET    g2    30.0
+r1599727.fit  GJ1214            TARGET    g2    30.0
+r1599728.fit  GJ1214            TARGET    g2    30.0
+r1599729.fit  GJ1214            TARGET    g2    30.0
+r1599730.fit  GJ1214            TARGET    g2    30.0
+r1599731.fit  GJ1214            TARGET    g2    30.0
+r1599732.fit  GJ1214            TARGET    g2    30.0
+r1599733.fit  GJ1214            TARGET    g2    30.0
+r1599734.fit  GJ1214            TARGET    g2    30.0
+r1599735.fit  GJ1214            TARGET    g2    30.0
+r1599736.fit  GJ1214            TARGET    g2    30.0
+r1599737.fit  GJ1214            TARGET    g2    30.0
+r1599738.fit  GJ1214            TARGET    g2    30.0
+r1599739.fit  GJ1214            TARGET    g2    30.0
+r1599740.fit  GJ1214            TARGET    g2    30.0
+r1599741.fit  GJ1214            TARGET    g2    30.0
+r1599742.fit  GJ1214            TARGET    g2    30.0
+r1599743.fit  GJ1214            TARGET    g2    30.0
+r1599744.fit  GJ1214            TARGET    g2    30.0
+r1599745.fit  GJ1214            TARGET    g2    30.0
+r1599746.fit  GJ1214            TARGET    g2    30.0
+r1599747.fit  GJ1214            TARGET    g2    30.0
+r1599748.fit  GJ1214            TARGET    g2    30.0
+r1599749.fit  GJ1214            TARGET    g2    30.0
+r1599750.fit  GJ1214            TARGET    g2    30.0
+r1599751.fit  GJ1214            TARGET    g2    30.0
+r1599752.fit  GJ1214            TARGET    g2    30.0
+r1599753.fit  GJ1214            TARGET    g2    30.0
+r1599754.fit  GJ1214            TARGET    g2    30.0
+r1599755.fit  GJ1214            TARGET    g2    30.0
+r1599756.fit  GJ1214            TARGET    g2    30.0
+r1599757.fit  GJ1214            TARGET    g2    30.0
+r1599758.fit  GJ1214            TARGET    g2    30.0
+r1599759.fit  GJ1214            TARGET    g2    30.0
+r1599760.fit  GJ1214            TARGET    g2    30.0
+r1599761.fit  GJ1214            TARGET    g2    30.0
+r1599762.fit  GJ1214            TARGET    g2    30.0
+r1599763.fit  GJ1214            TARGET    g2    30.0
+r1599764.fit  GJ1214            TARGET    g2    30.0
+r1599765.fit  GJ1214            TARGET    g2    30.0
+r1599766.fit  GJ1214            TARGET    g2    30.0
+r1599767.fit  GJ1214            TARGET    g2    30.0
+r1599768.fit  GJ1214            TARGET    g2    30.0
+r1599769.fit  GJ1214            TARGET    g2    30.0
+r1599770.fit  GJ1214            TARGET    g2    30.0
+r1599771.fit  GJ1214            TARGET    g2    30.0
+r1599772.fit  GJ1214            TARGET    g2    30.0
+r1599773.fit  GJ1214            TARGET    g2    30.0
+r1599774.fit  GJ1214            TARGET    g2    30.0
+r1599775.fit  GJ1214            TARGET    g2    30.0
+r1599776.fit  GJ1214            TARGET    g2    30.0
+r1599777.fit  GJ1214            TARGET    g2    30.0
+r1599778.fit  GJ1214            TARGET    g2    30.0
+r1599779.fit  GJ1214            TARGET    g2    30.0
+r1599780.fit  GJ1214            TARGET    g2    30.0
+r1599781.fit  GJ1214            TARGET    g2    30.0
+r1599782.fit  GJ1214            TARGET    g2    30.0
+r1599783.fit  GJ1214            TARGET    g2    30.0
+r1599784.fit  GJ1214            TARGET    g2    30.0
+r1599785.fit  GJ1214            TARGET    g2    30.0
+r1599786.fit  GJ1214            TARGET    g2    30.0
+r1599787.fit  GJ1214            TARGET    g2    30.0
+r1599788.fit  GJ1214            TARGET    g2    30.0
+r1599789.fit  GJ1214            TARGET    g2    30.0
+r1599790.fit  GJ1214            TARGET    g2    30.0
+r1599791.fit  GJ1214            TARGET    g2    30.0
+r1599792.fit  GJ1214            TARGET    g2    30.0
+r1599793.fit  GJ1214            TARGET    g2    30.0
+r1599794.fit  GJ1214            TARGET    g2    30.0
+r1599795.fit  GJ1214            TARGET    g2    30.0
+r1599796.fit  GJ1214            TARGET    g2    30.0
+r1599797.fit  GJ1214            TARGET    g2    30.0
+r1599798.fit  GJ1214            TARGET    g2    30.0
+r1599799.fit  GJ1214            TARGET    g2    30.0
+r1599800.fit  GJ1214            TARGET    g2    30.0
+r1599801.fit  GJ1214            TARGET    g2    30.0
+r1599802.fit  GJ1214            TARGET    g2    30.0
+r1599803.fit  GJ1214            TARGET    g2    30.0
+r1599804.fit  GJ1214            TARGET    g2    30.0
+r1599805.fit  GJ1214            TARGET    g2    30.0
+r1599806.fit  GJ1214            TARGET    g2    30.0
+r1599807.fit  GJ1214            TARGET    g2    30.0
+r1599808.fit  GJ1214            TARGET    g2    30.0
+r1599809.fit  GJ1214            TARGET    g2    30.0
+r1599810.fit  GJ1214            TARGET    g2    30.0
+r1599811.fit  GJ1214            TARGET    g2    30.0
+r1599812.fit  GJ1214            TARGET    g2    30.0
+r1599813.fit  GJ1214            TARGET    g2    30.0
+r1599814.fit  GJ1214            TARGET    g2    30.0
+r1599815.fit  GJ1214            TARGET    g2    30.0
+r1599816.fit  GJ1214            TARGET    g2    30.0
+r1599817.fit  GJ1214            TARGET    g2    30.0
+r1599818.fit  GJ1214            TARGET    g2    30.0
+r1599819.fit  GJ1214            TARGET    g2    30.0
+r1599820.fit  GJ1214            TARGET    g2    30.0
+r1599821.fit  GJ1214            TARGET    g2    30.0
+r1599822.fit  GJ1214            TARGET    g2    30.0
+r1599823.fit  GJ1214            TARGET    g2    30.0
+r1599824.fit  GJ1214            TARGET    g2    30.0
+r1599825.fit  GJ1214            TARGET    g2    30.0
+r1599826.fit  GJ1214            TARGET    g2    30.0
+r1599827.fit  GJ1214            TARGET    g2    30.0
+r1599828.fit  GJ1214            TARGET    g2    30.0
+r1599829.fit  GJ1214            TARGET    g2    30.0
+r1599830.fit  GJ1214            TARGET    g2    30.0
+r1599831.fit  GJ1214            TARGET    g2    30.0
+r1599832.fit  GJ1214            TARGET    g2    30.0
+r1599833.fit  GJ1214            TARGET    g2    30.0
+r1599834.fit  GJ1214            TARGET    g2    30.0
+r1599835.fit  GJ1214            TARGET    g2    30.0
+r1599836.fit  GJ1214            TARGET    g2    30.0
+r1599837.fit  GJ1214            TARGET    g2    30.0
+r1599838.fit  GJ1214            TARGET    g2    30.0
+r1599839.fit  GJ1214            TARGET    g2    30.0
+r1599840.fit  GJ1214            TARGET    g2    30.0
+r1599841.fit  GJ1214            TARGET    g2    30.0
+r1599842.fit  GJ1214            TARGET    g2    30.0
+r1599843.fit  GJ1214            TARGET    g2    30.0
+r1599844.fit  GJ1214            TARGET    g2    30.0
+r1599845.fit  GJ1214            TARGET    g2    30.0
+r1599846.fit  GJ1214            TARGET    g2    30.0
+r1599847.fit  GJ1214            TARGET    g2    30.0
+r1599848.fit  GJ1214            TARGET    g2    30.0
+r1599849.fit  GJ1214            TARGET    g2    30.0
+r1599850.fit  GJ1214            TARGET    g2    30.0
+r1599851.fit  GJ1214            TARGET    g2    30.0
+r1599852.fit  GJ1214            TARGET    g2    30.0
+r1599853.fit  GJ1214            TARGET    g2    30.0
+r1599854.fit  GJ1214            TARGET    g2    30.0
+r1599855.fit  GJ1214            TARGET    g2    30.0
+r1599856.fit  GJ1214            TARGET    g2    30.0
+r1599857.fit  GJ1214            TARGET    g2    30.0
+r1599858.fit  GJ1214            TARGET    g2    30.0
+r1599859.fit  GJ1214            TARGET    g2    30.0
+r1599860.fit  GJ1214            TARGET    g2    30.0
+r1599861.fit  GJ1214            TARGET    g2    30.0
+r1599862.fit  GJ1214            TARGET    g2    30.0
+r1599863.fit  GJ1214            TARGET    g2    30.0
+r1599864.fit  GJ1214            TARGET    g2    30.0
+r1599865.fit  GJ1214            TARGET    g2    30.0
+r1599866.fit  GJ1214            TARGET    g2    30.0
+r1599867.fit  GJ1214            TARGET    g2    30.0
+r1599868.fit  GJ1214            TARGET    g2    30.0
+r1599869.fit  GJ1214            TARGET    g2    30.0
+r1599870.fit  GJ1214            TARGET    g2    30.0
+r1599871.fit  GJ1214            TARGET    g2    30.0
+r1599872.fit  GJ1214            TARGET    g2    30.0
+r1599873.fit  GJ1214            TARGET    g2    30.0
+r1599874.fit  GJ1214            TARGET    g2    30.0
+r1599875.fit  GJ1214            TARGET    g2    30.0
+r1599876.fit  GJ1214            TARGET    g2    30.0
+r1599877.fit  GJ1214            TARGET    g2    30.0
+r1599878.fit  GJ1214            TARGET    g2    30.0
+r1599879.fit  GJ1214            TARGET    g2    30.0
+r1599880.fit  GJ1214            TARGET    g2    30.0
+r1599881.fit  GJ1214            TARGET    g2    30.0
+r1599882.fit  GJ1214            TARGET    g2    30.0
+r1599883.fit  GJ1214            TARGET    g2    30.0
+r1599884.fit  GJ1214            TARGET    g2    30.0
+r1599885.fit  GJ1214            TARGET    g2    30.0
+r1599886.fit  GJ1214            TARGET    g2    30.0
+r1599887.fit  GJ1214            TARGET    g2    30.0
+r1599888.fit  GJ1214            TARGET    g2    30.0
+r1599889.fit  GJ1214            TARGET    g2    30.0
+r1599890.fit  GJ1214            TARGET    g2    30.0
+r1599891.fit  GJ1214            TARGET    g2    30.0
+r1599892.fit  GJ1214            TARGET    g2    30.0
+r1599893.fit  GJ1214            TARGET    g2    30.0
+r1599894.fit  GJ1214            TARGET    g2    30.0
+r1599895.fit  GJ1214            TARGET    g2    30.0
+r1599896.fit  GJ1214            TARGET    g2    30.0
+r1599897.fit  GJ1214            TARGET    g2    30.0
+r1599898.fit  GJ1214            TARGET    g2    30.0
+r1599899.fit  GJ1214            TARGET    g2    30.0
+r1599900.fit  GJ1214            TARGET    g2    30.0
+r1599901.fit  GJ1214            TARGET    g2    30.0
+r1599902.fit  GJ1214            TARGET    g2    30.0
+r1599903.fit  GJ1214            TARGET    g2    30.0
+r1599904.fit  GJ1214            TARGET    g2    30.0
+r1599905.fit  GJ1214            TARGET    g2    30.0
+r1599906.fit  GJ1214            TARGET    g2    30.0
+r1599907.fit  GJ1214            TARGET    g2    30.0
+r1599908.fit  GJ1214            TARGET    g2    30.0
+r1599909.fit  GJ1214            TARGET    g2    30.0
+r1599910.fit  GJ1214            TARGET    g2    30.0
+r1599911.fit  GJ1214            TARGET    g2    30.0
+r1599912.fit  GJ1214            TARGET    g2    30.0
+r1599913.fit  GJ1214            TARGET    g2    30.0
+r1599914.fit  GJ1214            TARGET    g2    30.0
+r1599915.fit  GJ1214            TARGET    g2    30.0
+r1599916.fit  GJ1214            TARGET    g2    30.0
+r1599917.fit  GJ1214            TARGET    g2    30.0
+r1599918.fit  GJ1214            TARGET    g2    30.0
+r1599919.fit  GJ1214            TARGET    g2    30.0
+r1599920.fit  GJ1214            TARGET    g2    30.0
+r1599921.fit  GJ1214            TARGET    g2    30.0
+r1599922.fit  GJ1214            TARGET    g2    30.0
+r1599923.fit  GJ1214            TARGET    g2    30.0
+r1599924.fit  GJ1214            TARGET    g2    30.0
+r1599925.fit  GJ1214            TARGET    g2    30.0
+r1599926.fit  GJ1214            TARGET    g2    30.0
+r1599927.fit  GJ1214            TARGET    g2    30.0
+r1599928.fit  GJ1214            TARGET    g2    30.0
+r1599929.fit  GJ1214            TARGET    g2    30.0
+r1599930.fit  GJ1214            TARGET    g2    30.0
+r1599931.fit  GJ1214            TARGET    g2    30.0
+r1599932.fit  GJ1214            TARGET    g2    30.0
+r1599933.fit  GJ1214            TARGET    g2    30.0
+r1599934.fit  GJ1214            TARGET    g2    30.0
+r1599935.fit  GJ1214            TARGET    g2    30.0
+r1599936.fit  GJ1214            TARGET    g2    30.0
+r1599937.fit  GJ1214            TARGET    g2    30.0
+r1599938.fit  GJ1214            TARGET    g2    30.0
+r1599939.fit  GJ1214            TARGET    g2    30.0
+r1599940.fit  GJ1214            TARGET    g2    30.0
+r1599941.fit  GJ1214            TARGET    g2    30.0
+r1599942.fit  GJ1214            TARGET    g2    30.0
